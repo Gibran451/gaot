@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles_tematicas.css">
+    <link rel="stylesheet" href="../../js/main.js">
+  
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
+    <title>infraestructura</title>
+    
+</head>
+<body>
+    <!-- ENCABEZADO-->
+ <!-- ENCABEZADO-->
+ <nav class="navbar navbar-expand-lg custom-navbar navbar-dark navbar-hover">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../imagenes/logos.png" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fs-5 text-white" aria-current="page" href="../../index.html">Inicio</a>
+        </li>
+      
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fs-5 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tematicas
+          </a>
+          
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./Aptitud.html">Aptitud</a></li>
+              <li><a class="dropdown-item" href="./Climatologia.html">Climatología</a></li>
+              <li><a class="dropdown-item" href="./Demografia.html">Demografía</a></li>
+              <li><a class="dropdown-item" href="./Economia.html">Economía</a></li>
+              <li><a class="dropdown-item" href="./Geologia.html">Geología</a></li>
+              <li><a class="dropdown-item" href="./Hidrologia.html">Hidrología</a></li>
+              <li><a class="dropdown-item" href="./Infraestructura_c.html">Infraestructura de comunicación</a></li>
+              <li><a class="dropdown-item" href="./Relieve.html">Relieve</a></li>
+              <li><a class="dropdown-item" href="./Riegos_V.html">Riesgos y vulnerabilidad</a></li>
+              <li><a class="dropdown-item" href="./Suelo_con.html">Suelo de conservación y aptitud</a></li>
+              <li><a class="dropdown-item" href="./T_propiedad.html">Tipos de propiedad</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+          </li>  
+          
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="../../index.html" class="btn btn-outline-success text-white" role="button">GEOPORTAL</a>
+
+        </form>
+    </div>
+  </div>
+</nav>
+<!--FIN  ENCABEZADO-->
+<!--boton-->
+<a href="" class="btn-wsp" target="_blank">
+  <i class="fas fa-map"></i>
+</a>
+
+
+
+<!--DESCRIPCION 2-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=1026" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Aptitud antropogénica</h5>
+          <p class="card-text">Esta tematica muestra la capacidad o adaptabilidad de un entorno o paisaje para satisfacer las necesidades y actividades humanas.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup2">Saber más</button>
+          <div class="background-text">APTITUD ANTROPOGÉNICA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup2">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Aptitud antropogénica EDOMEX </h5>
+                <p class="card-text">Se refiere a la capacidad de un área geográfica definida de albergar y sustentar la vida y actividades del ser humano,
+                  En este caso enfocado a la comunicación mediante las vías terrestres ya que estas generan movimientos de recursos, comunicación y actividades que propician un crecimiento y desarrollo social 
+                </p>
+                
+              </div>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Aptitud antropogénica</h5>
+            <p class="card-text"> Corredores viales Principales
+              Sistemas de Transporte Destacados</p>
+              
+            
+             
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
+                Abrir Tabla
+              </button> <div class="collapse mt-3" id="tableCollapse">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+            
+                
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=1063" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=88" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=1067" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!--Modal 2-->
+  
+  <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenedor adaptable para la tabla -->
+          <div class="table-responsive">
+            <!-- Tabla con estilos de Bootstrap -->
+        
+            <table>
+              <thead>
+                  <tr>
+                      <th>Concepto</th>
+                      <th>Descripción</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Aptitud Antropogénica</td>
+                      <td>La aptitud antropogénica en el Estado de México destaca por la adaptación del paisaje para actividades agrícolas, urbanización y otras necesidades humanas. La modificación del entorno refleja la interacción intensiva entre la población y el medio ambiente.</td>
+                  </tr>
+                  <tr>
+                      <td>Corredores Viales Principales</td>
+                      <td>1. Autopista México-Toluca<br>2. Autopista Naucalpan-Ecatepec<br>3. Carretera Federal 57 (México–Piedras Negras)<br>4. Carretera Federal 55 (México–Tuxpan)<br>5. Carretera Federal 15D (México–Cuernavaca)</td>
+                  </tr>
+                  <tr>
+                      <td>Sistemas de Transporte Destacados</td>
+                      <td>1. Sistema de Transporte Colectivo (STC) Metro<br>2. Tren Interurbano México-Toluca<br>3. Red de Autobuses de Pasajeros del Estado de México (RAPE)<br>4. Aeropuerto Internacional de Toluca (AIT)</td>
+                  </tr>
+                  <tr>
+                      <td>Principales Ríos</td>
+                      <td>1. Río Lerma<br>2. Río Balsas<br>3. Río Pánuco</td>
+                  </tr>
+                  <tr>
+                      <td>Principales Presas</td>
+                      <td>1. Presa Valle de Bravo<br>2. Presa Villa Victoria<br>3. Presa Huapango<br>4. Presa San Andrés Tepetitlán<br>5. Presa Guadalupe<br>6. Presa José Antonio Álzate Ignacio Ramírez</td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- Agrega más botones si es necesario -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!--FIN DESCRIPCION 2-->
+
+<!--DESCRIPCION3-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=182" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Corredores Viales</h5>
+          <p class="card-text"> Esta tematica muestra  los tramos lineales de tierra destinados a la infraestructura de transporte, como carreteras o autopistas, que conectan diferentes lugares o regiones</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup3">Saber más</button>
+          <div class="background-text">CORREDORES VIALES</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup3">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Corredores Viales EDOMEX</h5>
+                <p class="card-text">Los corredores viales son vías de transporte terrestre diseñadas para facilitar la movilidad y la conexión entre diferentes lugares, ya sean ciudades, regiones o incluso países. Estas vías suelen ser carreteras, autopistas o autovías que permiten un desplazamiento rápido y eficiente de personas y mercancías. </p>
+                
+                <button class="btn btn-info white-btn" data-bs-toggle="modal" data-bs-target="#infoModal1">Más Información</button>
+        
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Corredores viales</h5>
+            <p class="card-text">Los corredores viales en el Estado de México son esenciales para el desarrollo económico, social y urbanístico de la región, además de mejorar la calidad de vida de sus habitantes al agilizar los desplazamientos y promover la inversión y el turismo, mejorando la conectividad y la movilidad de la región.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2">
+              Abrir Tabla
+            </button>  <div class="collapse mt-3" id="tableCollapse">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=212" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=242" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=249" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+  <!-- Modal 5-->
+  <div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- Añade la clase modal-lg para hacerla más ancha -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Corredores vialesa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal -->
+          <p>Los corredores viales son planificados y construidos con el propósito de mejorar la conectividad y reducir la congestión del tráfico, lo que a su vez contribuye al desarrollo económico, social y urbano de las áreas que atraviesan. Estas rutas suelen estar equipadas con señalización, carriles de circulación, pasos peatonales y otros elementos de infraestructura para garantizar la seguridad de los usuarios. 
+
+            Algunos de los principales corredores viales en el Estado de México son: 
+            </p>
+          <p>
+            1. Autopista México-Toluca: Conecta la Ciudad de México con la ciudad de Toluca, siendo una de las vías más importantes para el transporte entre ambas ciudades. 
+          </p>
+        <p>
+            2. Autopista México-Puebla: Atraviesa parte del Estado de México, proporcionando una vía rápida hacia la ciudad de Puebla y el sureste del país. 
+          </p>
+        <p>
+            3. Autopista Chamapa-Lechería: Importante vía de comunicación que conecta el norte del Estado de México con la zona metropolitana de la Ciudad de México. 
+          </p>
+           <p>
+            4. Circuito Exterior Mexiquense: Un anillo periférico que rodea la zona metropolitana del Valle de México, facilitando el tránsito alrededor de la ciudad. 
+          </p>
+        <p>
+            5. Autopista Lerma-Toluca: Conecta el municipio de Lerma con la ciudad de Toluca, mejorando la comunicación en la zona. 
+          </p>
+        <p>
+            6. Carretera Federal 57: Cruza el Estado de México en dirección norte-sur y es una importante ruta de transporte de mercancías. 
+          </p>
+                 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="modal fade" id="miModal2" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenedor adaptable para la tabla -->
+          <div class="table-responsive">
+            <!-- Tabla con estilos de Bootstrap -->
+            <table>
+              <thead>
+                  <tr>
+                      <th>Tipo de Corredor</th>
+                      <th>Longitud en km</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Autopistas (2020)</td>
+                      <td>1,272.421</td>
+                  </tr>
+                  <tr>
+                      <td>Avenidas (2020)</td>
+                      <td>4,394.742</td>
+                  </tr>
+                  <tr>
+                      <td>Calles (2020)</td>
+                      <td>25,771.982</td>
+                  </tr>
+                  <tr>
+                      <td>Carreteras (2021)</td>
+                      <td>28,272,359.627</td>
+                  </tr>
+                  <tr>
+                      <td>Vías Férreas (2019)</td>
+                      <td>676.718</td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- Agrega más botones si es necesario -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--FIN DESCRIPCION3-->
+<!--DESCRIPCION4-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=352" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Sistema de transporte</h5>
+          <p class="card-text"> Esta tematica muestra conjuntos organizados de infraestructuras, vehículos y servicios diseñados para facilitar el movimiento de bienes y personas.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup4">Saber más</button>
+          <div class="background-text"> SISTEMA TRANSPORTE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup4">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Sistema de transporte EDOMEX</h5>
+                <p class="card-text">Los sistemas de transporte son redes que están conectadas entre si y sirven para trasladar personas o mercancías de un punto a otro. El transporte publico es propiedad de una institución pública o privada más no del usuario, el usuario debe pagar una tarifa establecida para hacer uso de este tipo de transporte. En el Estado de México la red de trasporte esta compuesta por 3 aeropuertos, un aeródromo, diez helipuertos vigentes, una línea de Mexicable en operación, cuatro líneas de Mexibús, nueve estaciones de Metro y una línea de Suburbano.  </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Sistemas</h5>
+            <p class="card-text">En el estado de México,diversos sistemas de transporte mismos que s emuestran en la siguiente tabla:  </p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal4">
+              Abrir Tabla
+            </button> <div class="collapse mt-3" id="tableCollapse">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=314" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=335" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=345" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="miModal4" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenedor adaptable para la tabla -->
+        <div class="table-responsive">
+          <!-- Tabla con estilos de Bootstrap -->
+          <table>
+            <thead>
+                <tr>
+                    <th>Sistema de Transporte</th>
+                    <th>Trasporte</th>
+                    <th>Líneas</th>
+                    <th>Número de Estaciones/Puertos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Mexibús</td>
+                    <td>Línea 1</td>
+                    <td>32</td>
+                    
+                </tr>
+                <tr>
+                    <td>Línea 2</td>
+                    <td>44</td>
+                    
+                </tr>
+                <tr>
+                    <td>Línea 3</td>
+                    <td>30</td>
+                   
+                </tr>
+                <tr>
+                    <td>Línea 4</td>
+                    <td>29</td>
+                  
+                </tr>
+                <tr>
+                    <td rowspan="2">Mexicable</td>
+                    <td>Línea 1</td>
+                    <td>7</td>
+                 
+                </tr>
+               
+                <tr>
+                    <td rowspan="2">Metro</td>
+                    <td>Línea B</td>
+                    <td>8</td>
+             
+                </tr>
+               
+                <tr>
+                    <td rowspan="1">Suburbano</td>
+                    <td>Línea 1</td>
+                    <td>5</td>
+                   
+                </tr>
+                <tr>
+                    <td rowspan="2">Aeropuertos</td>
+                    <td>Aereo</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Agrega más botones si es necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN DESCRIPCION4-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>

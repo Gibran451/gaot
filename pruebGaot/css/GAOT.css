@@ -1,0 +1,57 @@
+#mapa
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100% !important;
+}
+.leaflet-marker-icon{
+    width: 30px !important;
+}
+.bgcolor{
+    background-color: #0E4379 !important;
+}
+.facolor{
+    color: white !important;
+}
+#DependenciasL{
+    width: 50px;
+}
+.btnaz{
+	background-color: #0A3356 !important;
+	color: #FFFFFF	!important;
+}
+.btncollaps{
+    width: 100% !important; 
+}
+.grid-print-container { 
+    grid-template: auto 1fr auto / 1fr;
+    background-color: lightblue;
+}
+.grid-map-print { 
+    grid-row: 2;
+}
+.title { 
+    grid-row: 1;
+    text-align: center;
+    color: black;
+    background-color: lightblue;
+    font-weight: bold;
+}
+.sub-content { 
+    grid-row: 5;
+    padding-left: 10px;
+    background-color: lightblue;
+}
+.sub-content1 { 
+    font-size: 20;
+    font-weight: bold;
+    grid-row: 5;
+    padding-left: 10px;
+    background-color: lightblue;
+}
+.sub2 {
+    padding: 35px;
+    background-color: lightblue;
+    font-size: 12;
+}

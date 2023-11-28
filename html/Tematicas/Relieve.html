@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles_tematicas.css">
+    <link rel="stylesheet" href="../../js/main.js">
+  
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Relieve</title>
+    
+</head>
+<body>
+    <!-- ENCABEZADO-->
+    <!-- ENCABEZADO-->
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark navbar-hover">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../../imagenes/logos.png" alt="Logo">
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-5 text-white" aria-current="page" href="../../index.html">Inicio</a>
+            </li>
+          
+  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tematicas
+              </a>
+              
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./Aptitud.html">Aptitud</a></li>
+                  <li><a class="dropdown-item" href="./Climatologia.html">Climatología</a></li>
+                  <li><a class="dropdown-item" href="./Demografia.html">Demografía</a></li>
+                  <li><a class="dropdown-item" href="./Economia.html">Economía</a></li>
+                  <li><a class="dropdown-item" href="./Geologia.html">Geología</a></li>
+                  <li><a class="dropdown-item" href="./Hidrologia.html">Hidrología</a></li>
+                  <li><a class="dropdown-item" href="./Infraestructura_c.html">Infraestructura de comunicación</a></li>
+                  <li><a class="dropdown-item" href="./Relieve.html">Relieve</a></li>
+                  <li><a class="dropdown-item" href="./Riegos_V.html">Riesgos y vulnerabilidad</a></li>
+                  <li><a class="dropdown-item" href="./Suelo_con.html">Suelo de conservación y aptitud</a></li>
+                  <li><a class="dropdown-item" href="./T_propiedad.html">Tipos de propiedad</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                 
+                </ul>
+              </li>  
+              
+          </ul>
+          <form class="d-flex" role="search">
+            <a href="../../index.html" class="btn btn-outline-success text-white" role="button">GEOPORTAL</a>
+  
+            </form>
+        </div>
+      </div>
+   </nav>
+<!--FIN  ENCABEZADO-->
+
+
+
+<!--DESCRIPCION 2-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=406" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Altimetría</h5>
+          <p class="card-text">Este eje se centra en medir y representar las altitudes o elevaciones de la superficie terrestre. </p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup2">Saber más</button>
+          <div class="background-text">ALTIMETRÍA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup2">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Altimetría EDOMEX </h5>
+                <p class="card-text">La altitud promedio de las cabeceras municipales es de 2 320 msnm, con un rango desde 1 330 hasta 2 800 msnm.  
+
+                  El relieve de la entidad se caracteriza por presentar dos grandes regiones: una donde predominan las sierras y lomeríos, que ocupan 76 % del territorio estatal; y otra, en donde se encuentran llanuras, valles y mesetas en 24 % del territorio. Esta heterogeneidad espacial proporciona una variedad de altitudes, tipos de roca, suelos, climas, vegetación, flora, fauna y paisajes característicos del territorio estatal.  </p>
+                
+              </div>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Altimetría</h5>
+            <p class="card-text"> Principales alturas</p>
+              
+            
+             
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal1">
+              Abrir Tabla
+            </button> <div class="collapse mt-3" id="tableCollapse">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+            
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=368" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=386" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=393" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="miModal1" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenedor adaptable para la tabla -->
+        <div class="table-responsive">
+          <!-- Tabla con estilos de Bootstrap -->
+      
+          
+          <table >
+            <thead>
+              <tr>
+                <th>NOMBRE</th>
+                <th>ALTURAS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Volcán Popocatépetl</td>
+                <td>5380</td>
+              </tr>
+              <tr>
+                <td>Volcán Iztaccíhuatl</td>
+                <td>5203</td>
+              </tr>
+              <tr>
+                <td>Xinantécatl</td>
+                <td>4645</td>
+              </tr>
+              <tr>
+                <td>Cerro Tlaloc</td>
+                <td>4120</td>
+              </tr>
+              <tr>
+                <td>Cerro Telapon</td>
+                <td>4064</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Agrega más botones si es necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FIN DESCRIPCION 2-->
+
+<!--DESCRIPCION3-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=474" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Pendientes</h5>
+          <p class="card-text"> Este eje temático se refiere a la inclinación del terreno en una determinada área. Las pendientes se calculan como la relación entre la elevación y la distancia horizontal.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup3">Saber más</button>
+          <div class="background-text">PENDIENTES</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup3">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Pendientes EDOMEX</h5>
+                <p class="card-text">En topografía, las "pendientes" se refieren a la inclinación del terreno o del relieve del suelo en una ubicación geográfica específica. Estas pendientes se expresan en forma de grados decimales, y describen cuán empinado o inclinado es un determinado tramo de terreno en relación con su horizontal.  </p>
+              
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <h5 class="card-title">Pendientes</h5>
+          <img src="https://i.postimg.cc/CLL3XKbL/image71772.png">
+          <div class="card-body">
+           
+            <p class="card-text">Generar atributos topográficos (primarios y secundarios) mediante el análisis digital de terreno en plataformas de fuente libre, usando como insumo principal el modelo digital de elevaciones generado por INEGI. </p>
+            
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=424" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=432" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=440" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN DESCRIPCION3-->
+<!--DESCRIPCION4-->
+
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=484" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Relieves</h5>
+          <p class="card-text"> El relieve abarca la representación gráfica de las formas y características superficiales de la Tierra. Incluye montañas, valles, mesetas, llanuras y otros elementos geográficos.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup4">Saber más</button>
+          <div class="background-text">RELIEVE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup4">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">RELIEVE EDOMEX</h5>
+                <p class="card-text">El relieve del estado de México es muy variado; presenta grandes planicies y cuatro grandes sistemas montañosos: la sierra Nevada al límite con el estado de Puebla donde se presenta los volcanes Popocatépetl e Iztaccíhuatl que son el segundo y el tercer picos más altos de México; las sierras de Monte Alto y Monte Bajo que son los límites con el oeste del Distrito Federal; la sierra del Xinantécatl al centro de la entidad donde se encuentra el volcán Nevado de Toluca, el cuarto pico más alto de México; y  La Sierra de San Andrés Timilpan se ubica al noroeste del estado. 
+
+                </p>
+              
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+      
+     
+          <div class="card-body">
+            <h5 class="card-title">Relieve</h5>
+            <p class="card-text"> Tipo de Terreno</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2">
+              Abrir Tabla
+            </button> <div class="collapse mt-3" id="tableCollapse">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+            
+                
+                
+                  
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=507" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=485" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=506" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="modal fade" id="miModal2" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenedor adaptable para la tabla -->
+        <div class="table-responsive">
+          <!-- Tabla con estilos de Bootstrap -->
+          <table >
+            <thead>
+              <tr>
+                <th>Tipo de Terreno</th>
+                <th>Porcentaje de Superficie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sierras</td>
+                <td>42.46%</td>
+              </tr>
+              <tr>
+                <td>Lomeríos</td>
+                <td>34.97%</td>
+              </tr>
+              <tr>
+                <td>Llanuras</td>
+                <td>15.24%</td>
+              </tr>
+              <tr>
+                <td>Valles</td>
+                <td>6.28%</td>
+              </tr>
+              <tr>
+                <td>Mesetas</td>
+                <td>1.05%</td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Agrega más botones si es necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN DESCRIPCION4-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>

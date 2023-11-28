@@ -1,0 +1,343 @@
+/*------------------------------------------------------
+Author: DGAPSU-DGPCyB
+Author URI:
+Note:
+-------------------------------------------------------*/
+body{
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+/*Head*/
+.cfazul{
+	color:white !important;
+	background-color: #0A3356!important;
+}
+.titulo1Header{
+    font-family:'Calibri' !important;
+	font-size: 30px !important;
+	font-weight:300;
+	line-height:1.6em;
+	color:#707070;
+	padding-top: 10px;
+    text-align: left;
+    font: normal normal medium 52px/63px Arial;
+    letter-spacing: 0px;
+    opacity: 1;
+    padding-left: 50px;
+}
+.padh{
+	padding-top: 13px;
+}
+.padhi{
+	padding-left: 13px;
+}
+.padhd{
+	padding-right: 13px;
+}
+/*Pie Pag*/
+.bg-menu-inferior{
+	background-color: #0E4379;
+}
+.bf-nota-inf{
+	background-color: #DEDEDE;
+}
+.btncontacto{
+	background-color: #10B1BD !important;
+	border-color: #10B1BD !important;
+	font-size: 20px !important;
+}
+.btnenlace{
+	background-color: #003057 !important;
+	border-color: #003057 !important;
+	font-size: 20px !important;
+	color: #FFF !important;
+}
+.visoresbtn{
+	background-color: #1182F4 !important;
+	width: 300px;
+	height: 190px;
+	font-size: 30px !important;
+	border-color: rgba(255, 255, 255, 0.18) !important;
+}
+.saberbtn{
+	background-color: #10B1BD !important;
+	width: 300px;
+	height: 190px;
+	font-size: 30px !important;
+	border-color: rgba(255, 255, 255, 0.18) !important;
+}
+.videosbtn{
+	background-color: #125FA5 !important;
+	width: 300px;
+	height: 190px;
+	font-size: 30px !important;
+	border-color: rgba(255, 255, 255, 0.18) !important;
+}
+.pronosticosbtn{
+	background-color: #CF1D1F !important;
+	width: 300px;
+	height: 190px;
+	font-size: 30px !important;
+	border-color: rgba(255, 255, 255, 0.18) !important;
+}
+.spanseparar{
+	color: #DEDEDE;
+}
+.redessociales{
+	color: #003057;
+	font-size: 34px;
+}
+.notafin{
+	font-family:'Montserrat' !important;
+		font-size: 20px !important;
+		font-weight:300;
+		line-height:1.6em;
+		color:#707070;
+		padding-top: 10px;
+		text-align: left;
+		font: normal normal medium 52px/63px Montserrat;
+		letter-spacing: 0px;
+		opacity: 1;
+}
+.notafinaviso{
+	font-family:'Montserrat' !important;
+	font-size: 20px !important;
+	font-weight:300;
+	line-height:1.6em;
+	color:#003057;
+	padding-top: 10px;
+	text-align: left;
+	font: normal normal medium 52px/63px Montserrat;
+	letter-spacing: 0px;
+	opacity: 1;
+}
+/*Saber*/
+.titulosaber{
+	background-color: #10B1BD;
+	height: 112px;
+	color:#FFFFFF;
+	font-size: 30px;
+	padding-left: 148px !important;
+	padding-top: 32px !important;
+}
+
+.contsab{
+	color:#003057;
+	font-size: 30px;
+}
+.contsab{
+	height: auto !important;
+}
+
+.contenidodsaber{
+	color: #003057;
+	font-size: 23px;
+	text-align: justify;
+}
+.saber{ /*Poner scroll en div*/
+	height: 900px;
+	width: 200px;
+	border: 1px solid #ddd;
+	background: #0E4379;
+	overflow-y: scroll;
+}
+.infografica img{
+	width: 100%;
+}
+/*Fin Saber*/
+/*-------Videos-------*/
+.titulovideos{
+	background-color: #125FA5;
+	height: 112px;
+	color:#FFFFFF;
+	font-size: 33px;
+	padding-left: 148px !important;
+	padding-top: 32px !important;
+}
+/*-------fin Videos-------*/
+/*-------Pronosticos-------*/
+.titulopronostico{
+	background-color: #CF1D1F;
+	height: 112px;
+	color:#FFFFFF;
+	font-size: 33px;
+	padding-left: 148px !important;
+	padding-top: 32px !important;
+}
+/*-------Fin Pronosticos-------*/
+
+/*-------Descargas-------*/
+.titulodescargas{
+	background-color: #BD109A;
+	height: 112px;
+	color:#FFFFFF;
+	font-size: 33px;
+	padding-left: 148px !important;
+	padding-top: 32px !important;	
+}
+/*-------Fin Descargas-------*/
+/*-------Peligros-------*/
+.fondopeligro{
+	background: #0E4379;
+}
+
+.textoblan{
+	color: #FFFFFF;
+}
+.peligros{ /*Poner scroll en div*/
+	height: 600px;
+	width: 200px;
+	border: 1px solid #ddd;
+	background: #0A3356 !important;
+	overflow-y: scroll;
+
+}
+.contenidopeligro{
+	height: 600px !important;
+}
+.titulopeligro{
+	background-color: #5EAD51;
+	height: 112px;
+	color:#FFFFFF;
+	font-size: 33px;
+	padding-left: 148px !important;
+	padding-top: 32px !important;
+}
+.ablanco:any-link{
+	color: #FFFFFF;
+}
+
+.contenidopeigro{
+	color: #5EAD51;
+	font-size: 23px;
+}
+/*-*/
+#menu * { list-style:none;}
+#menu li{ line-height:180%;color:#FFFFFF;}
+#menu li a{color:#FFFFFF; text-decoration:none;}
+#menu li a:before{ content:"\022b3"; color:#FFFFFF; margin-right:4px;}
+#menu input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#menu label:before{ content:"\02295"; margin-right:4px;}
+#menu input:checked ~ label:before{ content:"\02295";}
+#menu .interior{display: none;padding-left: 20px;}
+#menu input:checked ~ ul{display:block;}
+/*-*/
+#menuacerca a {
+	font: normal normal 600 30px/37px Montserrat !important;
+	width: 215px;
+	height: 76px;
+	color:#F10003;
+	font-size: 30px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.18) 0% 0% no-repeat padding-box !important;
+	border-radius: 13px;
+	border-color: rgba(255, 255, 255, 0.18) !important;
+	margin-bottom:13px !important;
+	padding-top: 15px !important;
+}
+/*-------Acerca de-------*/
+.tituloacerca{
+	background-color: #F10003;
+	height: 112px;
+	color:#FFFFFF;
+	font-size: 30px;
+	padding-left: 148px;
+	padding-top: 32px;
+}
+.fondoacerca{
+	background-image: url(../imagenes/Mapas.png);
+}
+.contenidoacerca{
+	color: #003057;
+	font-size: 23px;
+	text-align: left;
+}
+.acercad{ /*Poner scroll en div*/
+	height: 600px;
+	width: 200px;
+	border: 1px solid #ddd;
+	background: #0A3356 !important;
+}
+/*Responsivo screen*/
+.lunam{
+	width: 50% !important;
+}
+.lghea2{
+	width: 50% !important;
+	display: -webkit-box;
+	margin-left: 70%;
+}
+.logospasu{
+	width: 50% !important;
+}
+.imgsaber{
+	width: 70% !important;
+}
+.imgpeligros{
+	width: 50% !important;
+}
+.gif img{
+	width: 20% !important;
+}
+@media only screen and	(max-width:768px){
+	.lghea2{
+		width: 30% !important;
+		display: -webkit-box;
+		margin-left: 70%;
+	}
+	.lunam{
+		width: 30% !important;
+		display:block;	
+	}
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+	.lghea2{
+		width: 50% !important;
+		display: -webkit-box;
+		margin-left: 70%;
+	}
+	.lunam{
+		width: 50% !important;
+		display:block;	
+	}
+}
+@media only screen and (min-width:1025px) and (max-width:1200px){
+	.lghea2{
+		width: 50% !important;
+		display: -webkit-box;
+		margin-left: 70%;
+	}
+	.lunam{
+		width: 50% !important;
+		display:block;	
+	}
+	.lgicpp{
+	width:30%;
+	display:block;
+	margin:auto;
+	}
+}
+@media only screen and (min-width:1200px){
+	.lghea2{
+		width: 30% !important;
+		display: -webkit-box;
+		margin-left: 70%;
+	}
+	.lunam{
+		width: 30% !important;
+		display:block;	
+	}
+	.lgicpp{
+	width:30%;
+	display:block;
+	margin:auto;
+	}
+}
+.leaflet-control-browser-print a{
+	background-image: url(images/print.png) !important;
+	background-size: 28px !important;
+}

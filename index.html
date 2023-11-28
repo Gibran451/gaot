@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+    <!--Link Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Link spinner-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+  </head>
+    <title>GAOT web</title>
+</head>
+  <body>
+
+     <!-- Spinner -->
+     <div class="spinner-container">
+      <div class="spinner-icon">
+          <i class="fas fa-cog"></i> <!-- Icono de engranaje animado -->
+      </div>
+  </div>
+
+
+  <!-- Ventana emergente con Bootstrap Modal -->
+
+<div class="modal" id="popupModal">
+  <div class="modal-dialog modal-dialog-centered modal-sm"> <!-- Cambiado de modal-fullscreen a modal-dialog-centered y modal-sm -->
+      <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.622); color: white;">
+          <!-- Contenido de la ventana emergente -->
+          <div class="modal-header text-center">
+              <h5 class="modal-title text-center" style="font-size: 3rem;">¡Bienvenido!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+              <img src="https://i.postimg.cc/BbxNW6Zt/g3584.png" alt="Ejemplo de imagen"/>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- ===============================================-->
+<!-- ENCABEZADO-->
+<nav class="navbar navbar-expand-lg custom-navbar navbar-dark navbar-hover">
+    <div class="container-fluid"> 
+      <a class="navbar-brand" href="#">
+        <img src="./imagenes/logos.png" alt="Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-5 text-white" aria-current="page" href="#presentacion">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-white" href="#metadatos">Recursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-white" href="#preguntas-frecuentes">Ayuda</a>
+
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-5 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tematicas
+            </a>
+            
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./html/Tematicas/Aptitud.html">Aptitud</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Climatologia.html">Climatología</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Demografia.html">Demografía</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Economia.html">Economía</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Geologia.html">Geología</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Hidrologia.html">Hidrología</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Infraestructura_c.html">Infraestructura de comunicación</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Relieve.html">Relieve</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Riegos_V.html">Riesgos y vulnerabilidad</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/Suelo_con.html">Suelo de conservación y aptitud</a></li>
+              <li><a class="dropdown-item" href="./html/Tematicas/T_propiedad.html">Tipos de propiedad</a></li>
+              <li><hr class="dropdown-divider"></li>
+
+            </ul>
+          </li>  
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <a href="http://132.247.123.200/Pruebgaot/gaot.php" class="btn btn-outline-success text-white" role="button">GEOPORTAL</a>
+
+          </form>
+      </div>
+    </div>
+ </nav>
+<!--FIN  ENCABEZADO-->
+<!--boton-->
+<a href="http://132.247.123.200/Pruebgaot/gaot.php" class="btn-wsp" target="_blank">
+  <i class="fas fa-map"></i>
+</a>
+
+<!--HEADER-->
+     <!-- Header-->
+     <header class="py-5" style="background: url(./imagenes/fondo.jpeg) no-repeat center center; background-size: cover;">
+      <div class="container px-3">
+          <div class="row gx-6 align-items-center justify-content-center">
+              <div class="col-xl-6 col-xxl-6">
+                  <div class="my-5 text-center text-xxl-start">
+                      <h1 class="display-4 fw-bolder text-white mb-2"> Ordenamiento Territorial </h1>
+                      <h2 class="texto-amarillo-pastel">EDOMEX</h2>
+                      <p class="lead fw-normal texto mb-6">Accede a nuestro visor geografico aplicado a uno de los principales estados de la Republica Mexicana </p>
+                      <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                          <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#mapa">Visor Geografico</a>
+               
+                      </div>
+                  </div>
+              </div>
+              <div class=" col-lg-6  d-none d-xl-block text-center">
+                <!--CARROUSEL IMAGENES-->
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./imagenes/MOCKUP4.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Consulta</h5>
+                        <p>Visor geografico para consultar capas del EDOMEX</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./imagenes/MOCKUP1.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Descarga</h5>
+                        <p>Descarga información relvante a los temas</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./imagenes/SLIDER2.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Ordena</h5>
+                        <p>Ordenamiento de capas de caracter territorial</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              <!--FIN CARROUSEL-->
+
+
+              </div>
+          </div>
+      </div>
+  </header>
+<!--FIN HEADER-->
+<!--=========INICIO LOGOS===========-->
+
+<div  id="presentacion"  class="logos-ticker">
+	<div aria-hidden="true" class="logos-ticker-fade"></div>
+	<div class="logos-ticker-container">
+    <a href="#"><img src="https://i.postimg.cc/XvqxDNqQ/a-path47951.png"/></a>
+      <img src="https://i.postimg.cc/vZ33zxY4/a-path47949.png"/>
+      <img src="https://i.postimg.cc/vHwqHd2Z/a-path47854.png"/>
+      <img src="https://i.postimg.cc/2Sz0h7Dp/a-path47288.png"/>
+      <img src="https://i.postimg.cc/7Y1B5QjM/a-path47286.png"/>
+      
+    <a href="#"><img src="https://i.postimg.cc/NGHCc04n/a-path47122.png" /></a>
+    <img src="https://i.postimg.cc/DZtCGV25/a-path45459.png" />
+</div>
+  
+  <div class="logos-ticker-container">
+      <img src="https://i.postimg.cc/qRtbgBdz/a-path43858.png"/>
+      <img src="https://i.postimg.cc/dtGf80ZC/a-path43844.png"/>
+      <img src="https://i.postimg.cc/Pq5Fsz3b/a-g46891.png"/>
+      <img src="https://i.postimg.cc/GmQS5SQh/a-g46506.png"/>
+      <img src="https://i.postimg.cc/59hGYzy1/a-g46212.png"/>
+    <img src="https://i.postimg.cc/jSKFvryF/a-g45779.png" />
+    <img src="https://i.postimg.cc/QMYYX9w2/a-g45542.png" />
+    
+    
+</div>
+  
+</div>
+<!--=========FIN LOGOS==============-->
+
+
+<!--=====================MAPA=============================================================================-->
+
+<div class="iframe-container" id="mapa">
+
+   
+  <iframe src="./pruebGaot/gaot.html" width="99%" height="650px" frameborder="0"></iframe>
+</div>
+
+<!--fin mapa-->
+
+
+
+
+
+<!--================SECCION INFO====================-->
+  <!-- Features section-->
+  <section id="metadatos" class="py-5 bg-custom text-white" id="features">
+    <!--COLOR FONDO-->
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            
+                <h2 class="fw-bolder mb-0"></h2>
+                <p></p>
+                <img src="./imagenes/SIG_EDOMEX.png" alt="Descripción de la imagen">
+            </div>
+
+
+            <div class="col-lg-8">
+                <div class="row gx-4 gy-4 row-cols-1 row-cols-md-2">
+                
+                  <div class="col">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"></div>
+                    <h2 class="h5"><i ></i> ¿QUÉ ES?</h2>
+                    <p class="mb-0">Expresión espacial de las políticas económica, social, cultural y ecológica de toda la sociedad.</p>
+                    <p></p>
+
+
+                    <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  Conceptos Relacionados
+                              </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  Ordenamiento:Acción y efecto de colocar las cosas en el lugar que consideremos adecuado
+                                  Territorio:Espacio de interacción complementaria de los subsistemas natural, construido y social,
+                                  subsistemas que componen el medio ambiente nacional, regional y local.
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <p></p>
+                  <h2 class="h5"><i></i> El OT es al mismo tiempo:</h2>
+                  <p class="mb-0">
+                    ◦ Un proceso técnico- administrativo, porque orienta la regulación y promoción
+                    de la localización y desarrollo de los asentamientos humanos, actividades
+                    económicas, sociales, y desarrollo físico, espacial.</p>
+
+                  <p></p>
+                  <p></p>
+                  <h2 class="h5"><i></i> ¿POR QUÉ?</h2>
+                  <p class="mb-0">Actúa como instrumento que permite guiar e impulsar las inversiones públicas y privadas, con
+                    el fin de contribuir a revertir los procesos de exclusión y de pobreza y de fortalecer un
+                    desarrollo territorial sostenible y la mejora de la calidad de vida de las poblaciones..</p>
+
+                </div>
+
+
+
+                <div class="col">
+                  
+                  <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"></div>
+                  <h2 class="h5"><i ></i> OBJETIVOS</h2>
+                  <p class="mb-0">Objetivo de política de OT por nivel de aplicación</p>
+                  <p></p>
+
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedos" aria-expanded="false" aria-controls="collapsedos">
+                               LOCAL
+                            </button>
+                        </h2>
+                        <div id="collapsedos" class="accordion-collapse collapse" aria-labelledby="headingdos" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              Conformación barrial, zonificación, diseño urbano,
+                              acondicionamiento e infraestructura
+                            </div>
+                            
+                        </div>    
+                    </div>
+                </div>
+                <p></p>
+
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetres" aria-expanded="false" aria-controls="collapsetres">
+                             REGIONAL
+                          </button>
+                      </h2>
+                      <div id="collapsetres" class="accordion-collapse collapse" aria-labelledby="headingdos" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            En concordancia con los planes de los gobiernos
+                            locales: formular, aprobar, ejecutar, evaluar, dirigir,
+                            controlar y administrar los planes y políticas en materia
+                            ambiental y de OT.
+                          </div>
+                          
+                      </div>    
+                  </div>
+              </div>
+
+
+                <p></p>
+
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapsedos">
+                              NACIONAL
+                          </button>
+                      </h2>
+                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingdos" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Su orientación es más política que técnica; está
+                            asociado con los objetivos nacionales y definición de
+                            políticas, estrategias, planes y programas, criterios y
+                            procedimientos para el OT y la asignación de recursos.
+                          </div>
+                          
+                      </div>    
+                  </div>
+              </div>
+              <p></p>
+                <p>El OT tanmbien es un proceso técnico- administrativo, porque orienta la regulación y promoción
+                  de la localización y desarrollo de los asentamientos humanos, actividades
+                  económicas, sociales, y desarrollo físico, espacial.</p>
+                  
+          
+
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--===========FIN SECCION INFO ===========================-->
+<!--================SECTION TEMATICAS=================-->
+
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
+    <div class="row">
+      <div class="col-lg-9 text-center text-lg-start">
+        <h3>SOBRE LAS TEMATICAS</h3>
+        <p> Explora la diversidad geográfica del Estado de México a través de nuestra sección "Tematicas" en el Geoportal. Aquí, ofrecemos capas informativas sobre altimetría, pendientes, uso de suelo, riesgos naturales y más. Estas temáticas brindan una visión detallada y contextualizada para comprender la geografía estatal. Sumérgete en datos clave que van desde la altitud hasta la tenencia de la tierra, proporcionando una experiencia enriquecedora para investigadores y el público en general.</p>
+      </div>
+      <div class="col-lg-2 cta-btn-container text-center">
+       
+       
+        <!-- BOTÓN TEMÁTICAS -->
+        <p class="d-inline-flex gap-1">
+          <a class="btn  custom-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            CONOCE MÁS
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido de la sección desplegable -->
+  <div class="collapse" id="collapseExample">
+    <div class="container">
+      <!-- Contenido de la sección desplegable aquí -->
+
+      <!-- TEMATICAS-->
+ <div class="main">
+  <ul class="cards">
+    
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=191"></div>
+        <div class="card_content">
+          <h2 class="card_title">Aptitud</h2>
+          <p class="card_text">Conoce los temas relacionados a Aptitud</p>
+          <a href="./html/Tematicas/Aptitud.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=450"></div>
+        <div class="card_content">
+          <h2 class="card_title">Climatología</h2>
+          <p class="card_text">Conoce mas sobre el tema  Climatología</p>
+          <a href="./html/Tematicas/Climatologia.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=590"></div>
+        <div class="card_content">
+          <h2 class="card_title">Demografía</h2>
+          <p class="card_text">Conoce mas sobre el tema Demografia</p>
+          <a href="./html/Tematicas/Demografia.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=299"></div>
+        <div class="card_content">
+          <h2 class="card_title">Economía</h2>
+          <p class="card_text">Conoce los temas relacionados a Economía</p>
+          <a href="./html/Tematicas/Economia.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=170"></div>
+        <div class="card_content">
+          <h2 class="card_title">Geología</h2>
+          <p class="card_text">Conoce los temas relacionados a Geología</p>
+          <a href="./html/Tematicas/Geologia.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+      <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=700"></div>
+        <div class="card_content">
+          <h2 class="card_title">Hidrología</h2>
+          <p class="card_text">Conoce los temas relacionados a Hidrología</p>
+          <a href="./html/Tematicas/Hidrologia.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=220"></div>
+        <div class="card_content">
+          <h2 class="card_title">Infraestructura</h2>
+          <p class="card_text"> Conoce mas sobre Infraestructura de C.  </p>
+          <a href="./html/Tematicas/Infraestructura_c.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=330"></div>
+        <div class="card_content">
+          <h2 class="card_title">Relieve</h2>
+          <p class="card_text">Conoce los temas relacionados a   Relieve </p>
+          <a href="./html/Tematicas/Relieve.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+ 
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=440"></div>
+        <div class="card_content">
+          <h2 class="card_title">Riesgos y vulnerabilidad</h2>
+          <p class="card_text">Conoce los temas relacionados a Riesgos y vulnerabilidad </p>
+          <a href="./html/Tematicas/Riegos_V.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+ 
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=560"></div>
+        <div class="card_content">
+          <h2 class="card_title">Suelo de conservación</h2>
+          <p class="card_text">DConoce los temas relacionados a Suelo de conservación</p>
+          <a href="./html/Tematicas/Suelo_con.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=420"></div>
+        <div class="card_content">
+          <h2 class="card_title">Tipos de propiedad</h2>
+          <p class="card_text">Conoce mas sobre los temas relacionados a Tipos de propiedad</p>
+          <a href="./html/Tematicas/T_propiedad.html" class="card_link">
+            <button class="btn card_btn">Saber más</button>
+          </a>
+        </div>
+      </div>
+    </li>
+
+
+<!--FIN TEMATICAS-->
+
+</div>
+    </div>
+  </div>
+</section>
+<!-- ==========Fin Sección TEMATICAS=========-->
+
+
+<!--Seccion cards-->
+
+
+<section class="py-0">
+  <div class="container px-5 my-5">
+      <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6">
+              <div class="text-center">
+                  <h2 class="fw-bolder">Temas complementarios</h2>
+                  <p class="lead fw-normal text-muted mb-5">Obtén información detallada sobre aspectos clave que contribuyen a un desarrollo territorial sostenible. </p>
+              </div>
+          </div>
+      </div>
+      <div class="row gx-5">
+          <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                  <img class="card-img-top" src="https://i.postimg.cc/VkFDcwsr/onu.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="badge bg-primary bg-gradient rounded-pill mb-2">Web</div>
+                      <a class="text-decoration-none a1 link-dark stretched-link" href="https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/"><h5 class="card-title mb-3">Desarrollo Sostenible </h5></a>
+                      <p class="card-text mb-0">Explora los Objetivos de Desarrollo Sostenible (ODS) de la ONU para el año 2030 y descubre cómo contribuir al cambio positivo.</p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                      <div class="d-flex align-items-end justify-content-between">
+                          <div class="d-flex align-items-center">
+                             
+                              <div class="small">
+                                  <div class="fw-bold">ONU</div>
+                               
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                  <img class="card-img-top" src="https://i.postimg.cc/tJyj7yP0/ENOT.jpg" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="badge bg-primary bg-gradient rounded-pill mb-2">Blog</div>
+                      <a class="text-decoration-none link-dark stretched-link" href="https://www.gob.mx/sedatu/documentos/estrategia-nacional-de-ordenamiento-territorial-de-la-sedatu?state=published"><h5 class="card-title mb-3">Estrategia Nacional de Ordenamiento Territorial</h5></a>
+                      <p class="card-text mb-0">Descubre la hoja de ruta para el desarrollo territorial de México a través de la Estrategia Nacional de Ordenamiento Territorial (ENOT). </p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                      <div class="d-flex align-items-end justify-content-between">
+                          <div class="d-flex align-items-center">
+                         
+                              <div class="small">
+                                  <div class="fw-bold">SEDATU</div>
+                               
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                  <img class="card-img-top" src="https://i.postimg.cc/pVJmgmkR/1-g42132-b-copy-1.png" alt="..." />
+                  <div class="card-body p-4">
+                      <div class="badge bg-primary bg-gradient rounded-pill mb-2">Blog</div>
+                      <a class="text-decoration-none link-dark stretched-link" href="https://www.gob.mx/semarnat/acciones-y-programas/ordenamiento-ecologico-del-territorio"><h5 class="card-title mb-3">Ordenamiento Ecológico del Territorio</h5></a>
+                      <p class="card-text mb-0">Adéntrate en la gestión consciente de nuestro entorno a través de la página de Ordenamiento Ecológico del Territorio (OET) de la SEMARNAT</p>
+                  </div>
+                  <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                      <div class="d-flex align-items-end justify-content-between">
+                          <div class="d-flex align-items-center">
+                           
+                              <div class="small">
+                                  <div class="fw-bold">SEMARNAT</div>
+                               
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</section>
+<!--fin seccion cards-->
+
+
+
+<!--=====================================-->
+
+
+<section class="Equipo">
+
+<div class="text-center">
+<h2 class="fw-bolder margen2">Equipo de Trabajo</h2>
+<div class="text-center"></div>
+<div class="container">
+  <!-- Botón para mostrar/ocultar imágenes -->
+  <button type="button" class="btn-quienes" onclick="toggleImages()">Doble click</button>
+</div>
+
+<div class="margen">
+  <!-- Contenedor de imágenes colapsado -->
+  <div class="circle-container" id="circle-container">
+    <!-- Primera fila de imágenes circulares -->
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/wjjmpz1Z/1-image40810-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Emiliano</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/bN3ZL5mT/1-image40906-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Gibran</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/G3vYPq07/1-image40714-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Joab</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/s2BGMJ9J/1-image40786-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Ana</p>
+    </div>
+    <div class="circle-item">
+      <h1> </h1>
+      <img src="https://i.postimg.cc/rmr4P9Dp/1-image40690-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Hannia</p>
+    </div>
+  
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/XNKGBqFt/1-image40870-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Preisser</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/d39LbNwJ/1-image40822-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Esmeralda</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/8PBRGwtJ/1-image40762-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Estela</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/QMR91WfZ/1-image40846-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Brito</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/y8pS6G9d/1-image40834-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Mictlan</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/XvhFLP7h/1-image40702-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Olinka</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/d3RyqtmP/1-image40738-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Regina</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/Dw08NcDK/1-image40984-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Victor</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/qRytLMFh/1-image40858-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Carlos</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/hvRmW7m1/1-image40774-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Fernanda</p>
+    </div>
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/RhmWbxrP/1-image40882-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Aldair</p>
+    </div>
+   
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/vZ05gTRG/1-image40750-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Reyna</p>
+    </div>
+
+    <div class="circle-item">
+      <h1></h1>
+      <img src="https://i.postimg.cc/HsCwFF41/1-image40726-b.png" alt="Circle 1" class="rounded-circle">
+      <p>Luis Arturo</p>
+    </div>
+
+  </div>
+    <!-- Repite para las demás imágenes en la segunda fila -->
+  </div>
+</div>
+</div>
+<script>
+  // Función para mostrar/ocultar las imágenes al hacer clic en el botón
+  function toggleImages() {
+    var container = document.getElementById("circle-container");
+    container.style.display = (container.style.display === "none") ? "flex" : "none";
+  }
+</script>
+
+</section>
+
+
+<!--=======SECCION PREGUNTAS FRECUENTES============-->
+<section id="preguntas-frecuentes" class="py-5">
+  <div class="container-fluid faq-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card faq-card">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Preguntas Frecuentes</h1>
+                        <p>Tienes preguntas sobre el sitio Web, consulta  las preguntas frecuentes  </p>
+                        <div class="accordion" id="faqAccordion">
+                            <!-- Preguntas frecuentes -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="question1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1" aria-expanded="true" aria-controls="answer1">
+                                     ¿Donde puedo entrar al Geoportal del EDOMEX ?
+                                    </button>
+                                </h2>
+                                <div id="answer1" class="accordion-collapse collapse show" aria-labelledby="question1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                       Puedes ingresar al visor de capas desde el inico dando click al icono inferior izquierda o en la parte del encabezado  al boton "Geoportal"
+                                    </div>
+                                </div>
+                            </div>
+  
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="question2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2">
+                                      Donde encuentro Información relacionada al ordenamiento territorial 
+                                    </button>
+                                </h2>
+                                <div id="answer2" class="accordion-collapse collapse" aria-labelledby="question2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                       En la seccion de  temas complementarios encontraras  la estrategia Nacional de ordenamiento territorial, el cual habla sobre las estrategias, conceptos y modelos a utilizar para un correcto ordenamiento territorial
+                                    </div>
+                                </div>
+                            </div>
+  
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="question3">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3">
+                                    Puedo descargar capas de información  del geoportal
+                                  </button>
+                              </h2>
+                              <div id="answer3" class="accordion-collapse collapse" aria-labelledby="question3" data-bs-parent="#faqAccordion">
+                                  <div class="accordion-body">
+                                     El visor esta diseñado para consulta y  herramienta que facilitan el ordenamiento territorial del estado de méxico, por el momento no se puede descargar información geospacial desde este sitio.
+                                  </div>
+                              </div>
+                          </div>
+  
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="question4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4">
+                                 Como puedo obtener mas información de los temas
+                                </button>
+                            </h2>
+                            <div id="answer4" class="accordion-collapse collapse" aria-labelledby="question4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                   Te sugerimos que entres a la seccion "Sobre las Tematicas" la cual contiene informacion detallada de cada capa  utilizada en el visor geografico.
+                                </div>
+                            </div>
+                        </div>
+                            <!-- Agrega más preguntas frecuentes según sea necesario -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </section>
+  
+  <!--FIN PREGUNTAS FRECUENTES-->
+
+
+
+
+<!--=================================================SCRIPS==========================-->
+<script>
+  // Mostrar el spinner al cargar la página
+  document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector(".spinner-container").style.display = "flex";
+  });
+
+  // Ocultar el spinner después de que la página haya cargado
+  window.addEventListener("load", function() {
+      document.querySelector(".spinner-container").style.display = "none";
+
+      // Redirigir después de 500 milisegundos
+      setTimeout(function () {
+          window.location.href = '#mapa';
+      }, 400);
+
+      // Mostrar la ventana emergente después de redirigir
+      var myModal = new bootstrap.Modal(document.getElementById('popupModal'));
+      myModal.show();
+
+      // Subir al inicio después de 3 segundos
+      setTimeout(function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+
+          // Cerrar la ventana emergente después de 5 segundos adicionales
+          setTimeout(function () {
+              myModal.hide();
+          }, 400);
+
+      }, 4000);
+  });
+</script>
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <section class="foote">
+    <p>© 2023 GAOT. Todos los derechos reservados.</p>
+</section>
+  </body>
+
+</html>

@@ -1,0 +1,174 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="css/images/Poligono.png" />
+<title>Visor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="Visor-GAOT" />
+<!-- Inicio css -->
+<link rel="stylesheet" href="css/leaflet.css">
+<link rel="stylesheet" href="css/sidebar_leaflet/leaflet-sidebar.min.css">
+<link rel="stylesheet" href="css/leaflet-geoman.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/Control.Coordinates.css">
+<link href="css/GAOT.css" rel="stylesheet" />
+
+<!-- Fin css -->
+<body>
+<div class="col-lg-12 col-md-12">
+    <!--Barra Lateral-->
+    <div id="sidebar" class="sidebar collapsed bgcolor">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs bgcolor">
+            <ul role="tablist">
+                <li><a href="#capas" role="tab" style="padding-top: 5px;"><i class="fa fa-database facolor"></i></a></li>
+                <li><a href="#analisis" role="tab" style="padding-top: 5px;"><i class="fa fa-wrench facolor"></i></a></li>
+                <li><a href="#results" role="tab" style="padding-top: 5px;"><i class="fa fa-bars facolor"></i></a></li>
+            </ul>
+        </div>
+        <!-- Contenido de Silderbar -->
+        <div class="sidebar-content">
+            <!--home-->
+            <div class="sidebar-pane" id="capas">
+                <h3 class="sidebar-header" style= "text-align: center; ">
+                    Ordenamiento Territorial
+                    <span class="sidebar-close"><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></span>
+                </h3>
+                <h4 style= "text-align: center; font-weight: bold; "> CAPAS</h4>
+                
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#AP" role="button" aria-expanded="false" aria-controls="IGRAL">APTITUD</a>
+                </p>
+                <div class="collapse" id="AP">
+                    <div class="card card-body">
+                        <div id="apt" name="apt"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#CLIM" role="button" aria-expanded="false" aria-controls="IGRAL">CLIMATOLOGÍA</a>
+                </p>
+                <div class="collapse" id="CLIM">
+                    <div class="card card-body">
+                        <div id="clima" name="clima"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#DEMO" role="button" aria-expanded="false" aria-controls="IGRAL">DEMOGRAFÍA</a>
+                </p>
+                <div class="collapse" id="DEMO">
+                    <div class="card card-body">
+                        <div id="dem" name="dem"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#ECO" role="button" aria-expanded="false" aria-controls="IGRAL">ECONOMÍA</a>
+                </p>
+                <div class="collapse" id="ECO">
+                    <div class="card card-body">
+                        <div id="econ" name="econ"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#GEOL" role="button" aria-expanded="false" aria-controls="IGRAL">GEOLOGÍA</a>
+                </p>
+                <div class="collapse" id="GEOL">
+                    <div class="card card-body">
+                        <div id="geo" name="geo"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#HIDRO" role="button" aria-expanded="false" aria-controls="IGRAL">HIDROLOGÍA</a>
+                </p>
+                <div class="collapse" id="HIDRO">
+                    <div class="card card-body">
+                        <div id="hidr" name="hidr"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#IFC" role="button" aria-expanded="false" aria-controls="IGRAL">INFRAESTRUCTURA DE COMUNICACIÓN</a>
+                </p>
+                <div class="collapse" id="IFC">
+                    <div class="card card-body">
+                        <div id="icom" name="icom"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#RELI" role="button" aria-expanded="false" aria-controls="IGRAL">RELIEVE</a>
+                </p>
+                <div class="collapse" id="RELI">
+                    <div class="card card-body">
+                        <div id="rel" name="rel"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#RYV" role="button" aria-expanded="false" aria-controls="IGRAL">RIESGOS Y VULNERABILIDAD</a>
+                </p>
+                <div class="collapse" id="RYV">
+                    <div class="card card-body">
+                        <div id="ries" name="ries"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#SCA" role="button" aria-expanded="false" aria-controls="IGRAL">SUELO DE CONSERVACIÓN Y APTITUD</a>
+                </p>
+                <div class="collapse" id="SCA">
+                    <div class="card card-body">
+                        <div id="suel" name="suel"></div>
+                    </div>
+                </div>
+                <p>
+                  <a class="btnaz btncollaps btn btn-primary" data-bs-toggle="collapse" href="#TP" role="button" aria-expanded="false" aria-controls="IGRAL">TIPOS DE PROPIEDAD</a>
+                </p>
+                <div class="collapse" id="TP">
+                    <div class="card card-body">
+                        <div id="tprop" name="tprop"></div>
+                    </div>
+                </div>
+            </div>
+            <!--analisis-->
+            <div class="sidebar-pane" id="analisis">
+                <h3 class="sidebar-header" style= "text-align: center; ">
+                 
+                    <span class="sidebar-close"><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></span>
+                </h3>
+                <h4 style= "text-align: center; font-weight: bold; "> ANÁLISIS</h4>
+
+            </div>
+            <!--resultados-->
+            <div class="sidebar-pane" id="results">
+                <h3 class="sidebar-header" style= "text-align: center; ">
+                 
+                    <span class="sidebar-close"><i class="fa-solid fa-caret-left" style="color: #ffffff;"></i></span>
+                </h3>
+                <h4 style= "text-align: center; font-weight: bold; "> RESULTADOS</h4>
+                
+            </div>
+        </div>   
+    </div>
+    <!--Fin Barra Lateral-->
+    <!--prueba container datos-->
+ 
+    <!--fin prueba-->
+    <div id="mapa" class="sidebar-map"></div>
+</div>
+
+
+
+</body>
+<!--JS-->
+<script src="js/leaflet.js"></script>
+<script src="js/leaflet-geoman.min.js"></script>
+<script src="js/sidebar_leaflet/leaflet-sidebar.min.js"></script>
+<script src="js/esri/esri-leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/Control.Coordinates.js"></script>
+<script src="js/GAOT.js"></script>

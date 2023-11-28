@@ -1,0 +1,3334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles_tematicas.css">
+    <link rel="stylesheet" href="../../js/main.js">
+  
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Demografia</title>
+    
+</head>
+<body>
+    <!-- ENCABEZADO-->
+ <!-- ENCABEZADO-->
+ <nav class="navbar navbar-expand-lg custom-navbar navbar-dark navbar-hover">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../imagenes/logos.png" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fs-5 text-white" aria-current="page" href="../../index.html">Inicio</a>
+        </li>
+      
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fs-5 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tematicas
+          </a>
+          
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./Aptitud.html">Aptitud</a></li>
+              <li><a class="dropdown-item" href="./Climatologia.html">Climatología</a></li>
+              <li><a class="dropdown-item" href="./Demografia.html">Demografía</a></li>
+              <li><a class="dropdown-item" href="./Economia.html">Economía</a></li>
+              <li><a class="dropdown-item" href="./Geologia.html">Geología</a></li>
+              <li><a class="dropdown-item" href="./Hidrologia.html">Hidrología</a></li>
+              <li><a class="dropdown-item" href="./Infraestructura_c.html">Infraestructura de comunicación</a></li>
+              <li><a class="dropdown-item" href="./Relieve.html">Relieve</a></li>
+              <li><a class="dropdown-item" href="./Riegos_V.html">Riesgos y vulnerabilidad</a></li>
+              <li><a class="dropdown-item" href="./Suelo_con.html">Suelo de conservación y aptitud</a></li>
+              <li><a class="dropdown-item" href="./T_propiedad.html">Tipos de propiedad</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+          </li>  
+          
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="../../index.html" class="btn btn-outline-success text-white" role="button">GEOPORTAL</a>
+
+        </form>
+    </div>
+  </div>
+</nav>
+<!--FIN  ENCABEZADO-->
+<!--boton-->
+
+<!--DESCRIPCION1-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=49" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Densidad habitacional</h5>
+          <p class="card-text">Esta temática se refiere a la concentración de población en una zona específica, impactando la planificación del uso del suelo.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup1">Saber más</button>
+          <div class="background-text">DENSIDAD HABITACIONAL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup1">
+    <div class="row">
+      <!-- Tarjeta 1 (ocupa 2 columnas) -->
+      <div class="col-md-8">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Densidad habitacional en el EDOMEX</h5>
+            <p class="card-text">
+              La densidad habitacional por localidad es el número de viviendas por unidad de superficie, en este caso, por kilómetro cuadrado. Las capas de localidades rurales y localidades urbanas se encuentran disponibles en el Marco Estadístico del INEGI (2022) y el número de viviendas se obtuvo del censo de población y vivienda 2020, también del INEGI.
+            </p>
+
+            <!-- Botón que abre el modal -->
+            <button class="btn btn-info white-btn" data-bs-toggle="modal" data-bs-target="#infoModal">Más Información</button>
+
+            <!-- Agrega más contenido según sea necesario -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (ocupa 1 columna) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Densidad poblacional</h5>
+            <p class="card-text">Municipios más representativos por categoría de densidad habitacional.</p>
+            <!-- Botón que abre el modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
+              Abrir Tabla
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg"> <!-- Añade la clase modal-lg para hacerla más ancha -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Más Información</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido del modal -->
+        <p> La densidad habitacional por localidad se obtuvo al dividir el número de viviendas entre la superficie de cada una de las localidades, en kilómetros cuadrados, como se expresa en la Ecuación 1.
+        </p>
+        <p>DH= Numero de viviendas/Supericeie de la localidad [km2]    . . .   Ecuación 1</p>
+        <p></p>
+        <p>
+          Dentro de este apartado también se calculó la densidad habitacional por municipio, para ello, se sumó la superficie y el número de viviendas, de las localidades, por municipio y por tipo (Rural y urbano), posteriormente se calculó la densidad habitacional en el medio rural y en el medio urbano para cada uno de los municipios. De ambas densidades, del medio rural y del medio urbano, se calculó una media ponderada con el número de habitantes (Ecuación 2), del sector rural y del sector urbano, respectivamente, esto permitió obtener la densidad habitacional mas probable puesto que la importancia que se le dio a cada valor de densidad habitacional, rural y urbano, depende del número de viviendas, es decir, que aquella densidad calculada con un mayor número de habitantes recibió mayor peso.
+        </p>
+      </p>
+      <img src="https://i.postimg.cc/P5ZgK9xK/formula2.png" alt="Fórmula">
+      <p> </p>
+      <p>
+        A continuación se muestra las categorias de densidad habitacional ponderada de acuerdo a la clasificación de la Comisión Nacional del Agua (CONAGUA) propuesta en el Manual de Agua Potable Alcantarillado y Saneamiento (MAPAS)
+      </p>
+                        <p>
+                          Clasificación de la densidad habitacional 
+                        </p>
+                        <p>
+                          Densidad alta : Mas de 2, 000 viv/km2 
+                        </p><p> 
+                          Densidad moderada : De 501 a 2,000 viv/km2 
+                        </p><p>
+                          Densidad baja :Hasta 500 viv/km2 
+                          
+                          
+                  
+                          </p>
+
+
+                          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal 2-->
+
+<div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Densidad Poblacional</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenedor adaptable para la tabla -->
+        <div class="table-responsive">
+          <!-- Tabla con estilos de Bootstrap -->
+          <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>URBANO </td>
+                <td></td>
+                <td></td>
+                <td>RURAL</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>MUNICIPIO</td>
+                <td>SUP (KM2)</td>
+                <td>VIV.</td>
+                <td>VIV/KM2</td>
+                <td>SUP (KM2)</td>
+                <td>VIV.</td>
+                <td>VIV/KM2</td>
+                <td>DEN. HAB. PONDERADA </td>
+                <td>CATEGORÍA</td>
+            </tr>
+            <tr>
+                <td>Nezahualcóyotl</td>
+                <td>51.6</td>
+                <td>318806</td>
+                <td>6177.6</td>
+                <td>1.8</td>
+                <td>2</td>
+                <td>1.1</td>
+                <td>6177.6</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Coacalco de Berriozábal</td>
+                <td>22.1</td>
+                <td>101976</td>
+                <td>4621.4</td>
+                <td></td>
+                <td></td>
+                <td>0.0</td>
+                <td>4621.4</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Chicoloapan</td>
+                <td>14.1</td>
+                <td>63104</td>
+                <td>4475.8</td>
+                <td>1.2</td>
+                <td>1996</td>
+                <td>1676.2</td>
+                <td>4390.0</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Chimalhuacán</td>
+                <td>48.5</td>
+                <td>198324</td>
+                <td>4088.6</td>
+                <td>0.3</td>
+                <td>590</td>
+                <td>2127.5</td>
+                <td>4082.8</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Ecatepec de Morelos</td>
+                <td>129.5</td>
+                <td>502331</td>
+                <td>3880.1</td>
+                <td>0.2</td>
+                <td>469</td>
+                <td>2254.9</td>
+                <td>3878.6</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Valle  de Chalco Solidaridad</td>
+                <td>28.9</td>
+                <td>110867</td>
+                <td>3834.5</td>
+                <td>0.0</td>
+                <td>70</td>
+                <td>2890.0</td>
+                <td>3833.9</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Huehuetoca</td>
+                <td>23.6</td>
+                <td>79176</td>
+                <td>3356.7</td>
+                <td>6.5</td>
+                <td>5340</td>
+                <td>820.0</td>
+                <td>3196.5</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Tlalnepantla de Baz</td>
+                <td>70.6</td>
+                <td>217069</td>
+                <td>3075.8</td>
+                <td>0.0</td>
+                <td>26</td>
+                <td>540.3</td>
+                <td>3075.5</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Tultitlán</td>
+                <td>51.7</td>
+                <td>158893</td>
+                <td>3070.5</td>
+                <td>1.4</td>
+                <td>1160</td>
+                <td>847.7</td>
+                <td>3054.4</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Naucalpan de Juárez</td>
+                <td>80.0</td>
+                <td>246307</td>
+                <td>3077.2</td>
+                <td>5.0</td>
+                <td>9439</td>
+                <td>1885.9</td>
+                <td>3033.2</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Ixtapaluca</td>
+                <td>54.9</td>
+                <td>170445</td>
+                <td>3105.3</td>
+                <td>8.4</td>
+                <td>5428</td>
+                <td>644.4</td>
+                <td>3029.4</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>San Antonio la Isla</td>
+                <td>3.6</td>
+                <td>11064</td>
+                <td>3102.1</td>
+                <td>0.6</td>
+                <td>501</td>
+                <td>812.5</td>
+                <td>3002.9</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Tecámac</td>
+                <td>70.8</td>
+                <td>203049</td>
+                <td>2866.3</td>
+                <td>3.8</td>
+                <td>3691</td>
+                <td>965.6</td>
+                <td>2832.4</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>La Paz</td>
+                <td>28.5</td>
+                <td>81430</td>
+                <td>2856.5</td>
+                <td>3.3</td>
+                <td>5073</td>
+                <td>1518.4</td>
+                <td>2778.0</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Tultepec</td>
+                <td>17.1</td>
+                <td>47864</td>
+                <td>2798.6</td>
+                <td>3.7</td>
+                <td>2067</td>
+                <td>558.2</td>
+                <td>2705.9</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Cuautitlán</td>
+                <td>24.7</td>
+                <td>61460</td>
+                <td>2486.5</td>
+                <td>1.8</td>
+                <td>2343</td>
+                <td>1317.8</td>
+                <td>2443.6</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Chalco</td>
+                <td>57.1</td>
+                <td>131175</td>
+                <td>2296.5</td>
+                <td>7.8</td>
+                <td>5348</td>
+                <td>688.3</td>
+                <td>2233.5</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Otzoloapan</td>
+                <td>0.9</td>
+                <td>711</td>
+                <td>810.5</td>
+                <td>0.0</td>
+                <td>250</td>
+                <td>6063.1</td>
+                <td>2176.9</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Atizapán de Zaragoza</td>
+                <td>75.8</td>
+                <td>160226</td>
+                <td>2114.4</td>
+                <td>1.4</td>
+                <td>252</td>
+                <td>184.6</td>
+                <td>2111.3</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Juchitepec</td>
+                <td>3.3</td>
+                <td>7055</td>
+                <td>2126.8</td>
+                <td>0.2</td>
+                <td>186</td>
+                <td>1100.6</td>
+                <td>2100.4</td>
+                <td>Alta</td>
+            </tr>
+            <tr>
+                <td>Nicolás Romero</td>
+                <td>59.6</td>
+                <td>118970</td>
+                <td>1996.5</td>
+                <td>10.9</td>
+                <td>12188</td>
+                <td>1118.5</td>
+                <td>1914.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Cuautitlán Izcalli</td>
+                <td>92.2</td>
+                <td>174006</td>
+                <td>1888.0</td>
+                <td>5.0</td>
+                <td>5009</td>
+                <td>997.8</td>
+                <td>1863.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Huixquilucan</td>
+                <td>43.3</td>
+                <td>81537</td>
+                <td>1884.6</td>
+                <td>5.9</td>
+                <td>9673</td>
+                <td>1638.2</td>
+                <td>1858.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Jaltenco</td>
+                <td>4.7</td>
+                <td>8627</td>
+                <td>1841.0</td>
+                <td></td>
+                <td></td>
+                <td>0.0</td>
+                <td>1841.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Chapultepec</td>
+                <td>2.4</td>
+                <td>4569</td>
+                <td>1896.7</td>
+                <td>2.3</td>
+                <td>495</td>
+                <td>213.2</td>
+                <td>1732.2</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Nextlalpan</td>
+                <td>12.0</td>
+                <td>21330</td>
+                <td>1774.7</td>
+                <td>2.5</td>
+                <td>1919</td>
+                <td>780.8</td>
+                <td>1692.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Melchor Ocampo</td>
+                <td>11.7</td>
+                <td>17113</td>
+                <td>1466.0</td>
+                <td>0.1</td>
+                <td>619</td>
+                <td>7002.0</td>
+                <td>1659.2</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Calimaya</td>
+                <td>9.2</td>
+                <td>15849</td>
+                <td>1730.6</td>
+                <td>4.9</td>
+                <td>6781</td>
+                <td>1370.9</td>
+                <td>1622.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Temamatla</td>
+                <td>1.9</td>
+                <td>2148</td>
+                <td>1125.6</td>
+                <td>1.2</td>
+                <td>2242</td>
+                <td>1926.0</td>
+                <td>1534.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tonanitla</td>
+                <td>2.4</td>
+                <td>3261</td>
+                <td>1355.5</td>
+                <td>0.9</td>
+                <td>1653</td>
+                <td>1843.0</td>
+                <td>1519.5</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Metepec</td>
+                <td>47.9</td>
+                <td>73260</td>
+                <td>1530.1</td>
+                <td>8.0</td>
+                <td>2400</td>
+                <td>300.0</td>
+                <td>1491.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tejupilco</td>
+                <td>6.4</td>
+                <td>12259</td>
+                <td>1928.3</td>
+                <td>10.5</td>
+                <td>10067</td>
+                <td>955.2</td>
+                <td>1489.5</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Mexicaltzingo</td>
+                <td>1.8</td>
+                <td>3232</td>
+                <td>1748.8</td>
+                <td>1.9</td>
+                <td>814</td>
+                <td>425.9</td>
+                <td>1482.6</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Joquicingo</td>
+                <td>2.0</td>
+                <td>2979</td>
+                <td>1469.8</td>
+                <td>0.9</td>
+                <td>1321</td>
+                <td>1402.1</td>
+                <td>1449.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Acolman</td>
+                <td>35.1</td>
+                <td>50947</td>
+                <td>1449.4</td>
+                <td>2.3</td>
+                <td>1549</td>
+                <td>668.4</td>
+                <td>1426.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Santo Tomás</td>
+                <td>0.2</td>
+                <td>350</td>
+                <td>1639.1</td>
+                <td>1.6</td>
+                <td>2287</td>
+                <td>1388.0</td>
+                <td>1421.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Atenco</td>
+                <td>12.6</td>
+                <td>18379</td>
+                <td>1460.6</td>
+                <td>4.5</td>
+                <td>3118</td>
+                <td>698.5</td>
+                <td>1350.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Toluca</td>
+                <td>191.4</td>
+                <td>267984</td>
+                <td>1400.1</td>
+                <td>49.5</td>
+                <td>18278</td>
+                <td>369.4</td>
+                <td>1334.3</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tlalmanalco</td>
+                <td>9.6</td>
+                <td>11847</td>
+                <td>1239.2</td>
+                <td>1.9</td>
+                <td>3124</td>
+                <td>1669.5</td>
+                <td>1329.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tlatlaya</td>
+                <td>2.5</td>
+                <td>1288</td>
+                <td>512.3</td>
+                <td>4.0</td>
+                <td>6019</td>
+                <td>1490.9</td>
+                <td>1318.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Zumpango</td>
+                <td>93.0</td>
+                <td>123681</td>
+                <td>1329.9</td>
+                <td>10.7</td>
+                <td>10522</td>
+                <td>979.7</td>
+                <td>1302.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tezoyuca</td>
+                <td>10.8</td>
+                <td>14230</td>
+                <td>1313.8</td>
+                <td>0.9</td>
+                <td>501</td>
+                <td>530.0</td>
+                <td>1287.2</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>&quot;Tenango</td>
+            </tr>
+            <tr>
+                <td>del Valle&quot;</td>
+                <td>15.0</td>
+                <td>19726</td>
+                <td>1313.7</td>
+                <td>4.1</td>
+                <td>4487</td>
+                <td>1102.3</td>
+                <td>1274.6</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Cocotitlán</td>
+                <td>2.2</td>
+                <td>3072</td>
+                <td>1415.5</td>
+                <td>1.6</td>
+                <td>1426</td>
+                <td>880.8</td>
+                <td>1246.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Xalatlaco</td>
+                <td>2.6</td>
+                <td>4444</td>
+                <td>1691.0</td>
+                <td>5.4</td>
+                <td>3318</td>
+                <td>617.6</td>
+                <td>1232.2</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Xonacatlán</td>
+                <td>7.5</td>
+                <td>9088</td>
+                <td>1206.4</td>
+                <td>5.2</td>
+                <td>6301</td>
+                <td>1217.9</td>
+                <td>1211.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Almoloya del Río</td>
+                <td>2.3</td>
+                <td>3025</td>
+                <td>1314.0</td>
+                <td>0.9</td>
+                <td>530</td>
+                <td>582.9</td>
+                <td>1205.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Rayón</td>
+                <td>2.8</td>
+                <td>3340</td>
+                <td>1175.0</td>
+                <td>0.7</td>
+                <td>830</td>
+                <td>1252.5</td>
+                <td>1190.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>San Mateo Atenco</td>
+                <td>20.1</td>
+                <td>23775</td>
+                <td>1180.4</td>
+                <td></td>
+                <td></td>
+                <td>0.0</td>
+                <td>1180.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Chiconcuac</td>
+                <td>5.2</td>
+                <td>6338</td>
+                <td>1207.4</td>
+                <td>1.6</td>
+                <td>451</td>
+                <td>285.0</td>
+                <td>1146.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Zacualpan</td>
+                <td>1.0</td>
+                <td>1102</td>
+                <td>1152.1</td>
+                <td>1.8</td>
+                <td>1910</td>
+                <td>1081.8</td>
+                <td>1107.5</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Amecamec a</td>
+                <td>11.4</td>
+                <td>12999</td>
+                <td>1141.8</td>
+                <td>2.3</td>
+                <td>1842</td>
+                <td>799.9</td>
+                <td>1099.3</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Zacazonap an</td>
+                <td>1.4</td>
+                <td>1243</td>
+                <td>905.6</td>
+                <td>0.1</td>
+                <td>253</td>
+                <td>2000.0</td>
+                <td>1090.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ocoyoacac</td>
+                <td>11.7</td>
+                <td>14849</td>
+                <td>1266.4</td>
+                <td>11.4</td>
+                <td>5695</td>
+                <td>499.1</td>
+                <td>1053.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Capulhuac</td>
+                <td>7.5</td>
+                <td>8491</td>
+                <td>1133.1</td>
+                <td>2.5</td>
+                <td>1244</td>
+                <td>497.7</td>
+                <td>1051.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tenancingo</td>
+                <td>14.0</td>
+                <td>14605</td>
+                <td>1044.6</td>
+                <td>15.5</td>
+                <td>16132</td>
+                <td>1043.4</td>
+                <td>1044.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tonatico</td>
+                <td>2.5</td>
+                <td>2795</td>
+                <td>1133.1</td>
+                <td>2.5</td>
+                <td>2261</td>
+                <td>920.9</td>
+                <td>1038.2</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tenango del Aire</td>
+                <td>1.8</td>
+                <td>1910</td>
+                <td>1033.3</td>
+                <td>1.4</td>
+                <td>1385</td>
+                <td>1015.7</td>
+                <td>1025.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Luvianos</td>
+                <td>2.0</td>
+                <td>3006</td>
+                <td>1528.2</td>
+                <td>6.4</td>
+                <td>3045</td>
+                <td>479.1</td>
+                <td>1000.2</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ocuilan</td>
+                <td>1.6</td>
+                <td>1790</td>
+                <td>1135.3</td>
+                <td>8.8</td>
+                <td>8539</td>
+                <td>967.6</td>
+                <td>996.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Texcaltitlán</td>
+                <td>1.4</td>
+                <td>981</td>
+                <td>723.2</td>
+                <td>3.0</td>
+                <td>3170</td>
+                <td>1056.9</td>
+                <td>978.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Texcoco</td>
+                <td>75.6</td>
+                <td>74092</td>
+                <td>980.3</td>
+                <td>10.3</td>
+                <td>9089</td>
+                <td>880.5</td>
+                <td>969.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Almoloya de Juárez</td>
+                <td>28.2</td>
+                <td>30928</td>
+                <td>1095.7</td>
+                <td>27.8</td>
+                <td>21468</td>
+                <td>772.0</td>
+                <td>963.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>San Martín de las Pirámides</td>
+                <td>3.5</td>
+                <td>4352</td>
+                <td>1249.7</td>
+                <td>6.7</td>
+                <td>4478</td>
+                <td>673.2</td>
+                <td>957.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Zinacantep ec</td>
+                <td>44.0</td>
+                <td>45725</td>
+                <td>1039.8</td>
+                <td>22.0</td>
+                <td>13476</td>
+                <td>612.1</td>
+                <td>942.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Texcalyaca c</td>
+                <td>1.7</td>
+                <td>1605</td>
+                <td>941.8</td>
+                <td></td>
+                <td></td>
+                <td>0.0</td>
+                <td>941.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Apaxco</td>
+                <td>6.9</td>
+                <td>5734</td>
+                <td>826.2</td>
+                <td>3.1</td>
+                <td>3504</td>
+                <td>1112.9</td>
+                <td>934.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Teoloyucan</td>
+                <td>16.4</td>
+                <td>16163</td>
+                <td>985.0</td>
+                <td>4.5</td>
+                <td>1812</td>
+                <td>400.8</td>
+                <td>926.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Temoaya</td>
+                <td>14.1</td>
+                <td>16592</td>
+                <td>1178.4</td>
+                <td>22.7</td>
+                <td>14147</td>
+                <td>622.5</td>
+                <td>922.6</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Atizapán</td>
+                <td>3.0</td>
+                <td>2782</td>
+                <td>939.8</td>
+                <td>0.8</td>
+                <td>645</td>
+                <td>848.5</td>
+                <td>922.6</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Coyotepec</td>
+                <td>10.6</td>
+                <td>10076</td>
+                <td>952.6</td>
+                <td>1.7</td>
+                <td>870</td>
+                <td>499.2</td>
+                <td>916.5</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Teotihuacán</td>
+                <td>14.1</td>
+                <td>13666</td>
+                <td>966.4</td>
+                <td>6.7</td>
+                <td>4174</td>
+                <td>622.7</td>
+                <td>886.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Atlautla</td>
+                <td>8.8</td>
+                <td>8081</td>
+                <td>922.7</td>
+                <td>2.5</td>
+                <td>1636</td>
+                <td>656.1</td>
+                <td>877.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Temascalapa</td>
+                <td>15.0</td>
+                <td>10334</td>
+                <td>689.2</td>
+                <td>3.6</td>
+                <td>4533</td>
+                <td>1252.3</td>
+                <td>860.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Malinalco</td>
+                <td>4.3</td>
+                <td>3307</td>
+                <td>775.2</td>
+                <td>7.2</td>
+                <td>6368</td>
+                <td>886.0</td>
+                <td>848.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tianguisten co</td>
+                <td>13.6</td>
+                <td>13984</td>
+                <td>1025.1</td>
+                <td>17.1</td>
+                <td>9969</td>
+                <td>583.9</td>
+                <td>841.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>San José del Rincón</td>
+                <td>9.4</td>
+                <td>1411</td>
+                <td>149.4</td>
+                <td>16.5</td>
+                <td>14842</td>
+                <td>901.0</td>
+                <td>835.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ayapango</td>
+                <td>1.7</td>
+                <td>1346</td>
+                <td>784.3</td>
+                <td>1.9</td>
+                <td>1615</td>
+                <td>853.1</td>
+                <td>821.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ecatzingo</td>
+                <td>6.3</td>
+                <td>2441</td>
+                <td>386.0</td>
+                <td>0.3</td>
+                <td>741</td>
+                <td>2216.8</td>
+                <td>812.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Lerma</td>
+                <td>32.3</td>
+                <td>32216</td>
+                <td>996.5</td>
+                <td>40.4</td>
+                <td>20403</td>
+                <td>505.4</td>
+                <td>806.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ozumba</td>
+                <td>7.6</td>
+                <td>6799</td>
+                <td>892.4</td>
+                <td>3.8</td>
+                <td>1625</td>
+                <td>423.7</td>
+                <td>801.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Sultepec</td>
+                <td>2.4</td>
+                <td>1362</td>
+                <td>569.7</td>
+                <td>5.8</td>
+                <td>4951</td>
+                <td>849.5</td>
+                <td>789.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Chiautla</td>
+                <td>8.6</td>
+                <td>5689</td>
+                <td>658.3</td>
+                <td>3.0</td>
+                <td>3066</td>
+                <td>1025.9</td>
+                <td>787.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Amatepec</td>
+                <td>2.3</td>
+                <td>1970</td>
+                <td>852.1</td>
+                <td>3.5</td>
+                <td>2441</td>
+                <td>697.5</td>
+                <td>766.5</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ixtapan de la Sal</td>
+                <td>10.6</td>
+                <td>6878</td>
+                <td>646.6</td>
+                <td>7.8</td>
+                <td>6810</td>
+                <td>868.4</td>
+                <td>757.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Otzolotepe c</td>
+                <td>12.0</td>
+                <td>10069</td>
+                <td>839.8</td>
+                <td>21.0</td>
+                <td>14367</td>
+                <td>683.7</td>
+                <td>748.0</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Valle  de Bravo</td>
+                <td>16.6</td>
+                <td>13208</td>
+                <td>796.2</td>
+                <td>14.8</td>
+                <td>10056</td>
+                <td>677.9</td>
+                <td>745.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Amanalco</td>
+                <td>0.6</td>
+                <td>569</td>
+                <td>892.8</td>
+                <td>8.7</td>
+                <td>6312</td>
+                <td>723.3</td>
+                <td>737.3</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Zumpahua cán</td>
+                <td>1.5</td>
+                <td>1500</td>
+                <td>1025.4</td>
+                <td>7.0</td>
+                <td>4199</td>
+                <td>596.5</td>
+                <td>709.4</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tepotzotlá n</td>
+                <td>33.1</td>
+                <td>24480</td>
+                <td>738.8</td>
+                <td>10.6</td>
+                <td>6191</td>
+                <td>585.6</td>
+                <td>707.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Jilotzingo</td>
+                <td>4.8</td>
+                <td>2667</td>
+                <td>559.8</td>
+                <td>3.7</td>
+                <td>3056</td>
+                <td>836.4</td>
+                <td>707.5</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tepetlixpa</td>
+                <td>8.2</td>
+                <td>5280</td>
+                <td>641.1</td>
+                <td>0.6</td>
+                <td>600</td>
+                <td>1060.1</td>
+                <td>683.9</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>&quot;Tepetlaoxt</td>
+            </tr>
+            <tr>
+                <td>oc&quot;</td>
+                <td>11.7</td>
+                <td>5437</td>
+                <td>465.1</td>
+                <td>4.7</td>
+                <td>4174</td>
+                <td>878.8</td>
+                <td>644.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Papalotla</td>
+                <td>2.2</td>
+                <td>1410</td>
+                <td>647.1</td>
+                <td>0.1</td>
+                <td>16</td>
+                <td>114.9</td>
+                <td>641.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Otumba</td>
+                <td>11.9</td>
+                <td>7051</td>
+                <td>594.8</td>
+                <td>5.5</td>
+                <td>3700</td>
+                <td>668.5</td>
+                <td>620.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Atlacomulc o</td>
+                <td>23.1</td>
+                <td>17780</td>
+                <td>770.6</td>
+                <td>42.1</td>
+                <td>19230</td>
+                <td>457.0</td>
+                <td>607.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Temascaltepec</td>
+                <td>1.0</td>
+                <td>908</td>
+                <td>917.5</td>
+                <td>16.0</td>
+                <td>9187</td>
+                <td>573.1</td>
+                <td>604.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Tequixquiac</td>
+                <td>21.0</td>
+                <td>10385</td>
+                <td>495.3</td>
+                <td>1.6</td>
+                <td>1837</td>
+                <td>1174.0</td>
+                <td>597.3</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Ixtapan del Oro</td>
+                <td>0.5</td>
+                <td>377</td>
+                <td>744.2</td>
+                <td>3.2</td>
+                <td>1772</td>
+                <td>554.6</td>
+                <td>587.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Axapusco</td>
+                <td>9.2</td>
+                <td>5683</td>
+                <td>615.8</td>
+                <td>8.3</td>
+                <td>4167</td>
+                <td>500.1</td>
+                <td>566.8</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Isidro Fabela</td>
+                <td>1.1</td>
+                <td>707</td>
+                <td>621.7</td>
+                <td>5.4</td>
+                <td>2864</td>
+                <td>534.9</td>
+                <td>552.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Hueypoxtla</td>
+                <td>20.9</td>
+                <td>11368</td>
+                <td>543.2</td>
+                <td>3.7</td>
+                <td>2207</td>
+                <td>589.5</td>
+                <td>550.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Nopaltepec</td>
+                <td>5.7</td>
+                <td>3012</td>
+                <td>531.9</td>
+                <td>1.2</td>
+                <td>588</td>
+                <td>477.6</td>
+                <td>523.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Villa Guerrero</td>
+                <td>15.5</td>
+                <td>5880</td>
+                <td>380.5</td>
+                <td>26.1</td>
+                <td>14608</td>
+                <td>559.4</td>
+                <td>508.1</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Coatepec Harinas</td>
+                <td>2.4</td>
+                <td>2283</td>
+                <td>939.9</td>
+                <td>23.1</td>
+                <td>8973</td>
+                <td>388.9</td>
+                <td>500.7</td>
+                <td>Intermedia</td>
+            </tr>
+            <tr>
+                <td>Almoloya de Alquisiras</td>
+                <td>2.2</td>
+                <td>1328</td>
+                <td>590.2</td>
+                <td>9.9</td>
+                <td>4641</td>
+                <td>467.6</td>
+                <td>494.9</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Temascalci ngo</td>
+                <td>21.8</td>
+                <td>10742</td>
+                <td>492.2</td>
+                <td>27.8</td>
+                <td>12935</td>
+                <td>465.0</td>
+                <td>477.3</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>San Simón de Guerrero</td>
+                <td>1.1</td>
+                <td>445</td>
+                <td>400.7</td>
+                <td>2.2</td>
+                <td>1065</td>
+                <td>476.5</td>
+                <td>454.2</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Aculco</td>
+                <td>8.5</td>
+                <td>1554</td>
+                <td>183.9</td>
+                <td>26.7</td>
+                <td>12955</td>
+                <td>485.3</td>
+                <td>453.0</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Donato Guerra</td>
+                <td>15.2</td>
+                <td>3094</td>
+                <td>203.4</td>
+                <td>14.2</td>
+                <td>7676</td>
+                <td>540.3</td>
+                <td>443.5</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Jocotitlán</td>
+                <td>22.9</td>
+                <td>10996</td>
+                <td>479.2</td>
+                <td>30.0</td>
+                <td>11224</td>
+                <td>373.7</td>
+                <td>425.9</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Acambay de Ruíz Castañeda</td>
+                <td>7.2</td>
+                <td>1599</td>
+                <td>223.5</td>
+                <td>44.9</td>
+                <td>18481</td>
+                <td>412.0</td>
+                <td>397.0</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Villa del Carbón</td>
+                <td>10.0</td>
+                <td>5081</td>
+                <td>508.7</td>
+                <td>31.5</td>
+                <td>10656</td>
+                <td>338.7</td>
+                <td>393.6</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Chapa de Mota</td>
+                <td>25.8</td>
+                <td>4773</td>
+                <td>185.1</td>
+                <td>7.3</td>
+                <td>4323</td>
+                <td>588.6</td>
+                <td>376.9</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>El Oro</td>
+                <td>2.9</td>
+                <td>2121</td>
+                <td>741.6</td>
+                <td>35.2</td>
+                <td>10202</td>
+                <td>290.1</td>
+                <td>367.8</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Jiquipilco</td>
+                <td>5.6</td>
+                <td>2498</td>
+                <td>445.2</td>
+                <td>57.3</td>
+                <td>20500</td>
+                <td>357.9</td>
+                <td>367.4</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>San Felipe del Progreso</td>
+                <td>51.8</td>
+                <td>14722</td>
+                <td>284.4</td>
+                <td>54.9</td>
+                <td>22944</td>
+                <td>418.1</td>
+                <td>365.8</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Polotitlán</td>
+                <td>3.0</td>
+                <td>1172</td>
+                <td>392.1</td>
+                <td>9.5</td>
+                <td>3356</td>
+                <td>355.0</td>
+                <td>364.6</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Jilotepec</td>
+                <td>11.6</td>
+                <td>5536</td>
+                <td>478.8</td>
+                <td>74.4</td>
+                <td>21946</td>
+                <td>295.0</td>
+                <td>332.0</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Morelos</td>
+                <td>23.4</td>
+                <td>4764</td>
+                <td>203.3</td>
+                <td>15.7</td>
+                <td>6541</td>
+                <td>416.0</td>
+                <td>326.4</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Timilpan</td>
+                <td>1.0</td>
+                <td>412</td>
+                <td>403.5</td>
+                <td>17.8</td>
+                <td>5690</td>
+                <td>318.8</td>
+                <td>324.6</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Ixtlahuaca</td>
+                <td>101.8</td>
+                <td>26738</td>
+                <td>262.5</td>
+                <td>61.6</td>
+                <td>18150</td>
+                <td>294.6</td>
+                <td>275.5</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Villa Victoria</td>
+                <td>1.9</td>
+                <td>1675</td>
+                <td>901.2</td>
+                <td>117.8</td>
+                <td>27585</td>
+                <td>234.2</td>
+                <td>272.4</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Villa de Allende</td>
+                <td>5.0</td>
+                <td>1900</td>
+                <td>378.1</td>
+                <td>57.8</td>
+                <td>12386</td>
+                <td>214.4</td>
+                <td>236.2</td>
+                <td>Baja</td>
+            </tr>
+            <tr>
+                <td>Soyaniquilpan de Juárez</td>
+                <td>8.4</td>
+                <td>1970</td>
+                <td>234.7</td>
+                <td>25.2</td>
+                <td>3141</td>
+                <td>124.6</td>
+                <td>167.0</td>
+                <td>Baja</td>
+            </tr>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Agrega más botones si es necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FIN DESCRIPCION1-->
+
+<!--Descrpcion siguiente-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=61" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Pobreza y Tasa de crecimiento histórico poblacional</h5>
+          <p class="card-text">Esta tematica analiza la relación entre condiciones socioeconómicas y el aumento histórico de la población en una región.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup2">Saber más</button>
+          <div class="background-text">CRECIMIENTO HISTORICO </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup2">
+    <div class="row">
+      <!-- Tarjeta 1 (ocupa 2 columnas) -->
+      <div class="col-md-8">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Tasa de crecimiento de la población EDOMEX</h5>
+            <p class="card-text">
+              La tasa de crecimiento de la población se refiere al ritmo al que la población de un área concreta, como un país, una región o el mundo, aumenta o disminuye durante un periodo de tiempo determinado. Suele expresarse en porcentaje y es un indicador demográfico clave que proporciona información sobre cómo está cambiando una población.    </p>
+
+            <!-- Botón que abre el modal -->
+            <button class="btn btn-info white-btn" data-bs-toggle="modal" data-bs-target="#infoModal2">Más Información</button>
+
+            <!-- Agrega más contenido según sea necesario -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (ocupa 1 columna) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Densidad poblacional</h5>
+            <p class="card-text">Entre 2000 y 2020 los municipios que presentaron una tasa de crecimiento poblacional mayor fueron Huehuetoca, San Antonio la Isla, Tecámac, Nextlalpan y Chicoloapan (Tabla 1). Por otro lado, los municipios con menor crecimiento fueron Luvianos, Tonanitla, San José del Rincón, Amatepec y Sultepec (Tabla 2).</p>
+            <!-- Botón que abre el modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2">
+              Abrir Tabla
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg"> <!-- Añade la clase modal-lg para hacerla más ancha -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Más Información</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido del modal -->
+        <p> Una tasa de crecimiento poblacional puede ser estimada suponiendo que este crecimiento sigue cierto patrón preestablecido.  Los análisis más utilizados en demografía parten del supuesto de que la población sigue cierto modelo matemático, y el procedimiento consiste en estimar la relación funcional que lo explica. Para esta capa se utilizó un modelo geométrico para estimar la tasa de crecimiento poblacional histórica.  </p>
+         <p></p>
+        <p>
+          La tasa de crecimiento geométrico de la población, también conocida como crecimiento exponencial de la población, se refiere al crecimiento de una población cuando aumenta a una tasa relativa constante durante un periodo de tiempo determinado. En otras palabras, el tamaño de la población en cada periodo de tiempo es un múltiplo fijo del tamaño de la población en el periodo anterior. Se utilizó la siguiente expresión:   </p>
+      </p>
+      <img src="https://i.postimg.cc/jdcCQytk/formulaesme.png" alt="Fórmula">
+      <p> </p>
+      <p>
+        Donde :   </p>
+                        <p>
+                          ∆t= El número de años transcurridos entre censos 
+                        </p>
+                        <p>
+                          Pf=Población final
+                        </p><p> 
+                          Pi=Población inicial
+                        </p><p>
+                          Densidad baja :Hasta 500 viv/km2 
+                          
+                          
+                  
+                          </p>
+
+
+                          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal 2-->
+
+<div class="modal fade" id="miModal2" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenedor adaptable para la tabla -->
+        <div class="table-responsive">
+          <!-- Tabla con estilos de Bootstrap -->
+          <p>Tabla 1 </p>
+          <p> Mayor tasa de crecimiento poblacional</p>
+          <table class="table table-bordered table-light">
+            <!-- ... (contenido de la tabla) ... -->
+        
+          <thead>
+            <tr>
+              <th scope="col">MUNICIPIO</th>
+              <th scope="col">Tasa</th>
+         
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Luvianos  </th>
+              <td>-0.06 </td>
+    
+            </tr>
+            <tr>
+              <th scope="row">Tonanitla </th>
+              <td>-0.04 </td>
+            
+            </tr>
+            <tr>
+              <th scope="row">San José del Rincón  </th>
+              <td>-0.03</td>
+             
+            </tr>
+
+            <tr>
+              <th scope="row">Amatepec </th>
+              <td>-0.01</td>
+             
+            </tr>
+            <tr>
+              <th scope="row">Sultepec   </th>
+              <td>-0.01</td>
+             
+            </tr>
+            <!-- Agrega más filas si es necesario -->
+          </tbody>
+        </table>
+        <p>Tabla 2.</p><p> Menor tasa de crecimiento poblacional </p>
+        <table class="table table-bordered table-light">
+          <!-- ... (contenido de la tabla) ... -->
+      
+          <thead>
+            <tr>
+              <th scope="col">MUNICIPIO</th>
+              <th scope="col">Tasa</th>
+         
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Huehuetoca </th>
+              <td>0.07 </td>
+    
+            </tr>
+            <tr>
+              <th scope="row">San Antonio la Isla </th>
+              <td>0.06 </td>
+            
+            </tr>
+            <tr>
+              <th scope="row">Tecámac </th>
+              <td>0.06</td>
+             
+            </tr>
+
+            <tr>
+              <th scope="row">Nextlalpan </th>
+              <td>0.06</td>
+             
+            </tr>
+            <tr>
+              <th scope="row">Chicoloapan  </th>
+              <td>0.05</td>
+             
+            </tr>
+          <!-- Agrega más filas si es necesario -->
+        </tbody>
+      </table>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Agrega más botones si es necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN Descrpcion siguiente-->
+
+
+
+<!--DESCRIPCION3-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=162" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Tasa de crecimiento territorial</h5>
+          <p class="card-text"> Esta tematica muestra y evalua la expansión geográfica de la población </p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup3">Saber más</button>
+          <div class="background-text">CRECIMIENTO TERRITORIAL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup3">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Tasa de crecimiento territorial EN EDOMEX</h5>
+                <p class="card-text">En esta capa se hace un análisis sobre la proyección de población, usando el indicador del calculo de tasa de crecimiento de población en el estado de México, aquí se toma en cuenta los datos de población por municipio de los años 2000, 20010 y 2020,</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Tasa de crecimiento territorial</h5>
+            <p class="card-text">Tabla resumen de la tematica</p>
+            <button class="btn btn-info white-btn" data-bs-toggle="collapse" data-bs-target="#tableCollapse">Mostrar Tabla</button>
+            <div class="collapse mt-3" id="tableCollapse">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+                  <table class="table table-bordered table-light">
+                    <!-- ... (contenido de la tabla) ... -->
+                
+                  <thead>
+                    <tr>
+                      <th scope="col">TASA</th>
+                      <th scope="col">MUNICIPIO</th>
+                      <th scope="col">TENDENCIA</th>
+                   
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Población más baja </th>
+                      <td>San felipe del Progreso </td>
+                      <td>-1.00274080%</td>
+                    
+                    </tr>
+                    <tr>
+                      <th scope="row">Población más alta </th>
+                      <td>Huehuetoca </td>
+                      <td>7.49605507% </td>
+                    
+                    </tr>
+                    <!-- Agrega más filas si es necesario -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=560" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=562" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=563" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN DESCRIPCION3-->
+<!--DESCRIPCION4-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=283" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Tasa prospectiva de crecimiento poblacional</h5>
+          <p class="card-text"> Esta tematica muestra la proyecta el aumento futuro de habitanteS.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup4">Saber más</button>
+          <div class="background-text">PROSPECTIVA CRECIMIENTO</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup4">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Tasa prospectiva de crecimiento poblacional</h5>
+                <p class="card-text">La tasa prospectiva de crecimiento poblacional es una medida que estima cómo una población podría aumentar o disminuir en el futuro. Se basa en modelos matemáticos y estadísticos y sirve para que el gobierno del Estado de México anticipe y planifique cambios en la población. Esta tasa fue calculada hasta el año 2030. </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">PROSPECTIVA</h5>
+            <p class="card-text">En el estado de México, hay trece municipios que presentan una tasa de crecimiento negativa, lo que indica que su población disminuirá.  </p>
+            <button class="btn btn-info white-btn" data-bs-toggle="collapse" data-bs-target="#tableCollapsea">Mostrar Tabla</button>
+            <div class="collapse mt-3" id="tableCollapsea">
+              <div class="scroll-table-container"> <!-- Nuevo contenedor para el scroll -->
+                <div class="scroll-table"> <!-- Contenedor original de la tabla -->
+                  <table class="table table-bordered table-light">
+                  <!-- ... (contenido de la tabla) ... -->
+              
+                <thead>
+                  <tr>
+                    <th scope="col">TASA</th>
+                    <th scope="col">MUNICIPIO</th>
+                    <th scope="col">Predicción</th>
+                 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Crecimiento mas alto </th>
+                    <td>Ecatzingo </td>
+                    <td>2030</td>
+                  
+                  </tr>
+                  <tr>
+                    <th scope="row">Negativa más alta </th>
+                    <td>San Antonio la Isla </td>
+                    <td>2030 </td>
+                  
+                  </tr>
+                  <!-- Agrega más filas si es necesario -->
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 3 (con carrusel) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://picsum.photos/500/300/?image=560" class="d-block w-100" alt="Imagen de prueba 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=562" class="d-block w-100" alt="Imagen de prueba 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://picsum.photos/500/300/?image=563" class="d-block w-100" alt="Imagen de prueba 3">
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--FIN DESCRIPCION4-->
+<!--DESCRIPCION5-->
+<div class="container mt-4">
+  <!-- Tarjeta horizontal -->
+  <div class="card mb-3 rounded-card custom-bg">
+    <div class="row g-0">
+      <div class="col-md-3">
+        <div class="main-image-container">
+          <img src="https://picsum.photos/500/300/?image=397" alt="Imagen de prueba" class="img-fluid main-image">
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title title-left">Tipos de municipios</h5>
+          <p class="card-text"> Esta tematica  clasifica áreas según características y necesidades particulares para una gestión territorial adecuada.</p>
+          <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup5">Saber más</button>
+          <div class="background-text">TIPOS MUNICIPIOS </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grupo de tarjetas colapsadas -->
+  <div class="collapse" id="collapseGroup5">
+    <div class="row">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 mb-3">
+                <h5 class="card-title">Tipos de municipios</h5>
+                <p class="card-text">La presente metodología para la determinación de los tipos de municipios por Asentamiento Humano: Metropolitano, Urbano, Proceso de Transición de lo Rural a lo Urbano, Rural y Marginado, con base en los criterios empleados por el Programa de las Naciones Unidas para el Desarrollo en México (PNUD), para determinar la condición de urbanización de los municipios, el Sistema Urbana Nacional, Secretaria de Desarrollo Social y Consejo Nacional de Población, se establecen los parámetros para realizar la clasificación preliminar: </p>
+                   <!-- Botón que abre el modal -->
+ <button class="btn btn-info white-btn" data-bs-toggle="modal" data-bs-target="#infoModal5">Más Información</button>
+                 
+                </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 (con tabla más grande y scroll) -->
+      <div class="col-md-4">
+        <div class="card mb-3 rounded-card custom-bg">
+          <div class="card-body">
+            <h5 class="card-title">Tipos de Municipios</h5>
+            <p class="card-text">Tabla Resumen de tipología Municipal de los 125 municipios del Estado de México según el censo de población 2020  </p>
+           <!--boton-->
+           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal6">
+            Abrir Tabla
+          </button>
+          
+        </div>
+      </div>
+    </div>
+
+     <!-- Tarjeta 3 (con carrusel) -->
+     <div class="col-md-4">
+      <div class="card mb-3 rounded-card custom-bg">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/500/300/?image=408" class="d-block w-100" alt="Imagen de prueba 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/500/300/?image=410" class="d-block w-100" alt="Imagen de prueba 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/500/300/?image=411" class="d-block w-100" alt="Imagen de prueba 3">
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Modal 5-->
+<div class="modal fade" id="infoModal5" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg"> <!-- Añade la clase modal-lg para hacerla más ancha -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel">Tipos de municipios</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido del modal -->
+        
+
+        <p>1.Municipio Metropolitano. Mas del 50% de la población habita en localidades con mas de 100,000 habitantes y la población general es mayor a los 150,000 habitantes.  
+        </p>
+        <p>
+          2.Municipio Urbano. Más del 50% de la población reside en localidades de 15,000 habitantes. 
+        </p>
+          <p>
+         3. Municipio en proceso de Transición de lo Rural a lo Urbano. Más del 50% de la población habita en localidades de 2,500 a 15,000 habitantes, con una población gereral que oscila entre los 10,000 y 30,000 habitantes. 
+        </p>
+      <p>
+          4.Municipio Rural. Más del 50% de la población reside en localidades menores de 2,500 habitantes con una población general menor de 20,000 habitantes. 
+        </p>
+      <p>
+         5.Municipio Marginado. Población en localidades menores a 5,000 habitantes, alto grado de analfabetismo, pobreza extrema y carencia de alimentación, falta o deficiencia en infraestructura y servicios públicos, vivienda precaria y población ocupada con ingresos menores a dos salarios mínimos.  
+        </p>
+        <p></p>
+        <img src="https://i.postimg.cc/B6wtf0w9/grafica.png" >
+            <p>Cuadro resumen de tipología Municipal  2020 </p>              
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal 2-->
+
+<div class="modal fade" id="miModal6" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Contenedor adaptable para la tabla -->
+        <div class="table-responsive">
+          <!-- Tabla con estilos de Bootstrap -->
+          <table>
+            <tr>
+                <td>Nombre de municipio </td>
+                <td>Total </td>
+                <td>Hombres </td>
+                <td>Mujeres </td>
+                <td>Tipología </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Acambay de Ruíz Castañeda </td>
+                <td>67,872 </td>
+                <td>32,617 </td>
+                <td>35,255 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Acolman </td>
+                <td>171,507 </td>
+                <td>86,228 </td>
+                <td>85,279 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Aculco </td>
+                <td>49,266 </td>
+                <td>24,089 </td>
+                <td>25,177 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Almoloya de Alquisiras </td>
+                <td>15,333 </td>
+                <td>7,281 </td>
+                <td>8,052 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Almoloya de Juárez </td>
+                <td>174,587 </td>
+                <td>87,130 </td>
+                <td>87,457 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Almoloya del Río </td>
+                <td>12,694 </td>
+                <td>6,150 </td>
+                <td>6,544 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Amanalco </td>
+                <td>23,675 </td>
+                <td>11,534 </td>
+                <td>12,141 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Amatepec </td>
+                <td>25,244 </td>
+                <td>12,247 </td>
+                <td>12,997 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Amecameca </td>
+                <td>53,441 </td>
+                <td>25,440 </td>
+                <td>28,001 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Apaxco </td>
+                <td>31,898 </td>
+                <td>15,633 </td>
+                <td>16,265 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Atenco </td>
+                <td>75,489 </td>
+                <td>37,052 </td>
+                <td>38,437 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Atizapán </td>
+                <td>12,984 </td>
+                <td>6,287 </td>
+                <td>6,697 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Atizapán de Zaragoza </td>
+                <td>523,674 </td>
+                <td>253,429 </td>
+                <td>270,245 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Atlacomulco </td>
+                <td>109,384 </td>
+                <td>52,218 </td>
+                <td>57,166 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Atlautla </td>
+                <td>31,900 </td>
+                <td>15,585 </td>
+                <td>16,315 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Axapusco </td>
+                <td>29,128 </td>
+                <td>14,287 </td>
+                <td>14,841 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ayapango </td>
+                <td>10,053 </td>
+                <td>4,810 </td>
+                <td>5,243 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Calimaya </td>
+                <td>68,489 </td>
+                <td>33,388 </td>
+                <td>35,101 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Capulhuac </td>
+                <td>36,921 </td>
+                <td>17,778 </td>
+                <td>19,143 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coacalco de Berriozábal </td>
+                <td>293,444 </td>
+                <td>141,107 </td>
+                <td>152,337 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coatepec Harinas </td>
+                <td>38,643 </td>
+                <td>18,560 </td>
+                <td>20,083 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cocotitlán </td>
+                <td>15,107 </td>
+                <td>7,350 </td>
+                <td>7,757 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Coyotepec </td>
+                <td>40,885 </td>
+                <td>19,992 </td>
+                <td>20,893 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cuautitlán </td>
+                <td>178,847 </td>
+                <td>87,666 </td>
+                <td>91,181 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chalco </td>
+                <td>400,057 </td>
+                <td>193,129 </td>
+                <td>206,928 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chapa de Mota </td>
+                <td>31,737 </td>
+                <td>15,524 </td>
+                <td>16,213 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chapultepec </td>
+                <td>12,772 </td>
+                <td>6,165 </td>
+                <td>6,607 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chiautla </td>
+                <td>30,045 </td>
+                <td>14,668 </td>
+                <td>15,377 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chicoloapan </td>
+                <td>200,750 </td>
+                <td>97,195 </td>
+                <td>103,555 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chiconcuac </td>
+                <td>27,692 </td>
+                <td>13,548 </td>
+                <td>14,144 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chimalhuacán </td>
+                <td>705,193 </td>
+                <td>344,571 </td>
+                <td>360,622 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Donato Guerra </td>
+                <td>37,436 </td>
+                <td>18,391 </td>
+                <td>19,045 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ecatepec de Morelos </td>
+                <td>1,645,352 </td>
+                <td>798,549 </td>
+                <td>846,803 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ecatzingo </td>
+                <td>10,827 </td>
+                <td>5,321 </td>
+                <td>5,506 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Huehuetoca </td>
+                <td>163,244 </td>
+                <td>80,016 </td>
+                <td>83,228 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hueypoxtla </td>
+                <td>46,757 </td>
+                <td>23,108 </td>
+                <td>23,649 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Huixquilucan </td>
+                <td>284,965 </td>
+                <td>136,466 </td>
+                <td>148,499 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Isidro Fabela </td>
+                <td>11,929 </td>
+                <td>5,817 </td>
+                <td>6,112 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ixtapaluca </td>
+                <td>542,211 </td>
+                <td>263,083 </td>
+                <td>279,128 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ixtapan de la Sal </td>
+                <td>36,911 </td>
+                <td>17,676 </td>
+                <td>19,235 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ixtapan del Oro </td>
+                <td>6,475 </td>
+                <td>3,215 </td>
+                <td>3,260 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ixtlahuaca </td>
+                <td>160,139 </td>
+                <td>76,775 </td>
+                <td>83,364 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Xalatlaco </td>
+                <td>30,687 </td>
+                <td>14,952 </td>
+                <td>15,735 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Jaltenco </td>
+                <td>28,217 </td>
+                <td>13,645 </td>
+                <td>14,572 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Jilotepec </td>
+                <td>87,671 </td>
+                <td>42,810 </td>
+                <td>44,861 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Jilotzingo </td>
+                <td>19,877 </td>
+                <td>9,719 </td>
+                <td>10,158 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Jiquipilco </td>
+                <td>76,826 </td>
+                <td>36,464 </td>
+                <td>40,362 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Jocotitlán </td>
+                <td>69,264 </td>
+                <td>33,245 </td>
+                <td>36,019 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Joquicingo </td>
+                <td>15,428 </td>
+                <td>7,543 </td>
+                <td>7,885 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Juchitepec </td>
+                <td>27,116 </td>
+                <td>13,143 </td>
+                <td>13,973 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Lerma </td>
+                <td>170,327 </td>
+                <td>83,968 </td>
+                <td>86,359 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Malinalco </td>
+                <td>28,155 </td>
+                <td>13,833 </td>
+                <td>14,322 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Melchor Ocampo </td>
+                <td>61,220 </td>
+                <td>29,907 </td>
+                <td>31,313 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Metepec </td>
+                <td>242,307 </td>
+                <td>115,997 </td>
+                <td>126,310 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mexicaltzingo </td>
+                <td>13,807 </td>
+                <td>6,753 </td>
+                <td>7,054 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Morelos </td>
+                <td>33,164 </td>
+                <td>15,970 </td>
+                <td>17,194 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Naucalpan de Juárez </td>
+                <td>834,434 </td>
+                <td>402,495 </td>
+                <td>431,939 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nezahualcóyotl </td>
+                <td>1,077,208 </td>
+                <td>519,922 </td>
+                <td>557,286 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nextlalpan </td>
+                <td>57,082 </td>
+                <td>27,988 </td>
+                <td>29,094 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nicolás Romero </td>
+                <td>430,601 </td>
+                <td>209,774 </td>
+                <td>220,827 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nopaltepec </td>
+                <td>10,351 </td>
+                <td>5,090 </td>
+                <td>5,261 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ocoyoacac </td>
+                <td>72,103 </td>
+                <td>35,221 </td>
+                <td>36,882 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ocuilan </td>
+                <td>36,223 </td>
+                <td>17,645 </td>
+                <td>18,578 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>El Oro </td>
+                <td>36,937 </td>
+                <td>17,918 </td>
+                <td>19,019 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Otumba </td>
+                <td>36,331 </td>
+                <td>18,197 </td>
+                <td>18,134 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Otzoloapan </td>
+                <td>4,891 </td>
+                <td>2,397 </td>
+                <td>2,494 </td>
+                <td>Marginado </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Otzolotepec </td>
+                <td>88,783 </td>
+                <td>43,447 </td>
+                <td>45,336 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ozumba </td>
+                <td>30,785 </td>
+                <td>14,752 </td>
+                <td>16,033 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Papalotla </td>
+                <td>4,862 </td>
+                <td>2,338 </td>
+                <td>2,524 </td>
+                <td>Marginado </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>La Paz </td>
+                <td>304,088 </td>
+                <td>148,202 </td>
+                <td>155,886 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Polotitlán </td>
+                <td>14,985 </td>
+                <td>7,329 </td>
+                <td>7,656 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Rayón </td>
+                <td>15,972 </td>
+                <td>7,749 </td>
+                <td>8,223 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>San Antonio la Isla </td>
+                <td>31,962 </td>
+                <td>15,421 </td>
+                <td>16,541 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>San Felipe del Progreso </td>
+                <td>144,924 </td>
+                <td>69,328 </td>
+                <td>75,596 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>San Martín de las Pirámides </td>
+                <td>29,182 </td>
+                <td>14,268 </td>
+                <td>14,914 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>San Mateo Atenco </td>
+                <td>97,418 </td>
+                <td>47,481 </td>
+                <td>49,937 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>San Simón de Guerrero </td>
+                <td>6,692 </td>
+                <td>3,253 </td>
+                <td>3,439 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Santo Tomás </td>
+                <td>9,729 </td>
+                <td>4,836 </td>
+                <td>4,893 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Soyaniquilpan de Juárez </td>
+                <td>14,323 </td>
+                <td>7,103 </td>
+                <td>7,220 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sultepec </td>
+                <td>24,145 </td>
+                <td>11,438 </td>
+                <td>12,707 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tecámac </td>
+                <td>547,503 </td>
+                <td>265,520 </td>
+                <td>281,983 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tejupilco </td>
+                <td>79,282 </td>
+                <td>38,008 </td>
+                <td>41,274 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temamatla </td>
+                <td>14,130 </td>
+                <td>6,928 </td>
+                <td>7,202 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temascalapa </td>
+                <td>43,593 </td>
+                <td>21,374 </td>
+                <td>22,219 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temascalcingo </td>
+                <td>66,414 </td>
+                <td>31,897 </td>
+                <td>34,517 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temascaltepec </td>
+                <td>35,014 </td>
+                <td>17,189 </td>
+                <td>17,825 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Temoaya </td>
+                <td>105,766 </td>
+                <td>51,532 </td>
+                <td>54,234 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tenancingo </td>
+                <td>104,677 </td>
+                <td>51,227 </td>
+                <td>53,450 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tenango del Aire </td>
+                <td>11,359 </td>
+                <td>5,552 </td>
+                <td>5,807 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tenango del Valle </td>
+                <td>90,518 </td>
+                <td>44,490 </td>
+                <td>46,028 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Teoloyucan </td>
+                <td>65,459 </td>
+                <td>31,939 </td>
+                <td>33,520 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Teotihuacán </td>
+                <td>58,507 </td>
+                <td>28,195 </td>
+                <td>30,312 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tepetlaoxtoc </td>
+                <td>32,564 </td>
+                <td>15,906 </td>
+                <td>16,658 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tepetlixpa </td>
+                <td>20,500 </td>
+                <td>9,946 </td>
+                <td>10,554 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tepotzotlán </td>
+                <td>103,696 </td>
+                <td>50,708 </td>
+                <td>52,988 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tequixquiac </td>
+                <td>39,489 </td>
+                <td>19,329 </td>
+                <td>20,160 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Texcaltitlán </td>
+                <td>18,482 </td>
+                <td>8,945 </td>
+                <td>9,537 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Texcalyacac </td>
+                <td>5,736 </td>
+                <td>2,821 </td>
+                <td>2,915 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Texcoco </td>
+                <td>277,562 </td>
+                <td>134,940 </td>
+                <td>142,622 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tezoyuca </td>
+                <td>47,044 </td>
+                <td>23,237 </td>
+                <td>23,807 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tianguistenco </td>
+                <td>84,259 </td>
+                <td>40,847 </td>
+                <td>43,412 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Timilpan </td>
+                <td>16,414 </td>
+                <td>7,861 </td>
+                <td>8,553 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tlalmanalco </td>
+                <td>49,196 </td>
+                <td>23,574 </td>
+                <td>25,622 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tlalnepantla de Baz </td>
+                <td>672,202 </td>
+                <td>327,017 </td>
+                <td>345,185 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tlatlaya </td>
+                <td>31,762 </td>
+                <td>15,626 </td>
+                <td>16,136 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Toluca </td>
+                <td>910,608 </td>
+                <td>439,173 </td>
+                <td>471,435 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tonatico </td>
+                <td>12,912 </td>
+                <td>6,235 </td>
+                <td>6,677 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tultepec </td>
+                <td>157,645 </td>
+                <td>77,132 </td>
+                <td>80,513 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tultitlán </td>
+                <td>516,341 </td>
+                <td>251,638 </td>
+                <td>264,703 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Valle de Bravo </td>
+                <td>61,590 </td>
+                <td>30,076 </td>
+                <td>31,514 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Villa de Allende </td>
+                <td>53,275 </td>
+                <td>25,894 </td>
+                <td>27,381 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Villa del Carbón </td>
+                <td>51,498 </td>
+                <td>25,567 </td>
+                <td>25,931 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Villa Guerrero </td>
+                <td>69,086 </td>
+                <td>33,859 </td>
+                <td>35,227 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Villa Victoria </td>
+                <td>108,196 </td>
+                <td>53,139 </td>
+                <td>55,057 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Xonacatlán </td>
+                <td>54,633 </td>
+                <td>26,758 </td>
+                <td>27,875 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Zacazonapan </td>
+                <td>5,109 </td>
+                <td>2,576 </td>
+                <td>2,533 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Zacualpan </td>
+                <td>13,522 </td>
+                <td>6,456 </td>
+                <td>7,066 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Zinacantepec </td>
+                <td>203,872 </td>
+                <td>99,506 </td>
+                <td>104,366 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Zumpahuacán </td>
+                <td>18,833 </td>
+                <td>9,088 </td>
+                <td>9,745 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Zumpango </td>
+                <td>280,455 </td>
+                <td>136,971 </td>
+                <td>143,484 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cuautitlán Izcalli </td>
+                <td>555,163 </td>
+                <td>268,956 </td>
+                <td>286,207 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Valle de Chalco Solidaridad </td>
+                <td>391,731 </td>
+                <td>190,674 </td>
+                <td>201,057 </td>
+                <td>Metropolitano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Luvianos </td>
+                <td>28,822 </td>
+                <td>14,087 </td>
+                <td>14,735 </td>
+                <td>En transición </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>San José del Rincón </td>
+                <td>100,082 </td>
+                <td>49,033 </td>
+                <td>51,049 </td>
+                <td>Urbano </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tonanitla </td>
+                <td>14,883 </td>
+                <td>7,253 </td>
+                <td>7,630 </td>
+                <td>Rural </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <!-- Agrega más botones si es necesario -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--FIN DESCRIPCION5-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>

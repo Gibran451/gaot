@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/styles_tematicas.css">
+    <link rel="stylesheet" href="../../js/main.js">
+  
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+
+    <title>Hidrologia</title>
+    
+</head>
+<body>
+    <!-- ENCABEZADO-->
+ <!-- ENCABEZADO-->
+ <nav class="navbar navbar-expand-lg custom-navbar navbar-dark navbar-hover">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../../imagenes/logos.png" alt="Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fs-5 text-white" aria-current="page" href="../../index.html">Inicio</a>
+        </li>
+      
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fs-5 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tematicas
+          </a>
+          
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./Aptitud.html">Aptitud</a></li>
+              <li><a class="dropdown-item" href="./Climatologia.html">Climatología</a></li>
+              <li><a class="dropdown-item" href="./Demografia.html">Demografía</a></li>
+              <li><a class="dropdown-item" href="./Economia.html">Economía</a></li>
+              <li><a class="dropdown-item" href="./Geologia.html">Geología</a></li>
+              <li><a class="dropdown-item" href="./Hidrologia.html">Hidrología</a></li>
+              <li><a class="dropdown-item" href="./Infraestructura_c.html">Infraestructura de comunicación</a></li>
+              <li><a class="dropdown-item" href="./Relieve.html">Relieve</a></li>
+              <li><a class="dropdown-item" href="./Riegos_V.html">Riesgos y vulnerabilidad</a></li>
+              <li><a class="dropdown-item" href="./Suelo_con.html">Suelo de conservación y aptitud</a></li>
+              <li><a class="dropdown-item" href="./T_propiedad.html">Tipos de propiedad</a></li>
+              <li><hr class="dropdown-divider"></li>
+             
+            </ul>
+          </li>  
+          
+      </ul>
+      <form class="d-flex" role="search">
+        <a href="../../index.html" class="btn btn-outline-success text-white" role="button">GEOPORTAL</a>
+
+        </form>
+    </div>
+  </div>
+</nav>
+<!--FIN  ENCABEZADO-->
+
+<!--Descrpcion siguiente-->
+<div class="container mt-4">
+    <!-- Tarjeta horizontal -->
+    <div class="card mb-3 rounded-card custom-bg">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="main-image-container">
+            <img src="https://picsum.photos/500/300/?image=973" alt="Imagen de prueba" class="img-fluid main-image">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title title-left">Hidrología Superficial</h5>
+            <p class="card-text"> Esta tematica muestra las condiciones hidrologicas de una región específica superficialmente , analizando datos  espaciales y temporales.</p>
+            <button class="btn btn-primary white-btn" data-bs-toggle="collapse" data-bs-target="#collapseGroup1">Saber más</button>
+            <div class="background-text">HIDROLOGÍA SUPERFICIAL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Grupo de tarjetas colapsadas -->
+    <div class="collapse" id="collapseGroup1">
+      <div class="row">
+        <!-- Tarjeta 1 (ocupa 2 columnas) -->
+        <div class="col-md-8">
+          <div class="card mb-3 rounded-card custom-bg">
+            <div class="card-body">
+              <h5 class="card-title">Hidrología superficial en el Estado de México</h5>
+              <p class="card-text">
+                Las aguas superficiales del Estado de México están distribuidas en tres regiones hidrológicas: RH12 “Lerma-Santiago”, RH18 “Balsas” y RH26 “Pánuco”.   </p>
+  
+              <!-- Botón que abre el modal -->
+              <button class="btn btn-info white-btn" data-bs-toggle="modal" data-bs-target="#infoModal2">Más Información</button>
+  
+              <!-- Agrega más contenido según sea necesario -->
+            </div>
+          </div>
+        </div>
+  
+        <!-- Tarjeta 2 (ocupa 1 columna) -->
+        <div class="col-md-4">
+          <div class="card mb-3 rounded-card custom-bg">
+            <div class="card-body">
+              <h5 class="card-title">Hidrologia principal</h5>
+              <p class="card-text">Ríos y presas principales.</p>
+              <!-- Botón que abre el modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2">
+                Abrir Tabla
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"> <!-- Añade la clase modal-lg para hacerla más ancha -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="infoModalLabel">Más Información</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p>Región hidrológica RH12 “Lerma-Santiago” con la cuenca Río Lerma-Toluca cubre el 23.76% de la superficie estatal. Drena las aguas del centro de la entidad en dirección hacia el noroeste a través del Rio Lerma que desemboca en el lago Chapala (Jalisco) y vierte sus aguas al océano pacifico a través del Río Grande de Santiago. El río Lerma nace en la laguna de Almoloya del Río y tiene una extensión total de 708 km de los cuales 125 de recorrido están dentro del estado de México.</p>
+          <p>Región hidrológica RH18 “Balsas” El río Balsas, conocido también como Atoyac, Mezcala o Zacatula, es uno de los más importantes en la República. La región se localiza entre los paralelos 17°00' y 20°00' de latitud norte y los meridianos 97°27' y 103°15' de longitud oeste. Abarca todo Morel os, la parte sureste del Estado de México y una pequeña porción del sur del Distrito Federal, así como un área al suroeste de Puebla y el extremo norte de Guerrero. Cubre el 41.81% de la superficie estatal, drenando las aguas del sur y del oeste de la entidad hacia el río Balsas que vierte sus aguas al océano Pacífico. Las cuencas de esta región hidrológica y la porción del territorio estatal que cobijan son: Río Cutzamala (22.95%), Río Grande de Amacuzac (12.06%), Río Balsas-Zirándaro (6.07%) y Río Atoyac (0.73%).</p>                  
+            <p>Región hidrológica RH26 “Pánuco” Es una de las regiones hidrológicas más importantes de la República Mexicana, tanto por el volumen de sus corrientes superficiales, que la sitúan dentro de las cinco más grandes del país, como por su superficie. Esta región hidrológica abarca una gran extensión que comprende toda la parte norte, noreste y noroeste del estado. Cubre el 34.43% del territorio estatal, Con la cuenca del Río Moctezuma drenando las aguas del norte y este de la entidad hacia el río Pánuco para verter sus aguas al Golfo de México.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Modal 2-->
+  
+  <div class="modal fade" id="miModal2" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+  
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="miModalLabel">Tabla </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenedor adaptable para la tabla -->
+          <div class="table-responsive">
+            <!-- Tabla con estilos de Bootstrap -->
+        
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Tipo de Cuerpo de Agua</th>
+                    <th>Nombre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ríos Principales</td>
+                    <td>Lerma</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Balsas</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Pánuco</td>
+                  </tr>
+                  <tr>
+                    <td>Presas Principales</td>
+                    <td>Valle de Bravo</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Villa Victoria</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Huapango</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>San Andrés Tepetitlán</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Guadalupe</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>José Antonio Álzate Ignacio Ramírez</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- Agrega más botones si es necesario -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--FIN Descrpcion siguiente-->
+  
+  
+
+
+
+
+<!-- Blog preview section-->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>

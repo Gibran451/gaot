@@ -1,0 +1,175 @@
+.custom-navbar {
+    background-color: #040e1f;
+  }
+
+
+  /*------------------HEADER----------------------*/
+
+
+  .navbar-hover .nav-link:hover {
+    border: 1px solid rgb(199, 199, 199); /* Contorno blanco al pasar el cursor */
+    background-color: #ffffff17;
+    border-radius: 5px; /* Radio de las esquinas para curvar el contorno */
+  }
+  
+ /*FIN HEADER*/
+
+ /*--boton verde*/
+
+.btn-wsp{
+  font-style: normal;
+  text-decoration: none;
+  font-style: normal;
+  position:fixed;
+  width:70px;
+  height:60px;
+  line-height: 61px;
+  bottom:25px;
+  left:25px;
+  background:#2d3955;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  background: #2034ba;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-wsp{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+}
+}
+
+/*tarjetas*/
+    /* Estilo para bordes redondos */
+    .rounded-card {
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    /* Estilo para el color de fondo y el texto */
+    .custom-bg {
+      background-color: #040e1f;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* Estilo para la imagen principal */
+    .main-image {
+      border-radius: 15px;
+      margin-right: 20px;
+      height: 180px;
+  
+    }
+
+    /* Estilo para el título de la tarjeta principal */
+    .title-left {
+      font-size: 24px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 10px;
+    }
+
+    /* Estilo para el texto semitransparente en el fondo de la tarjeta principal */
+    .background-text {
+      position: absolute;
+      top: 50%;
+      left: 70%; /* Mover a la derecha */
+      transform: translate(-50%, -50%);
+      font-size: 85px; /* 6 veces más grande */
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.048);
+
+      text-align: right; /* Alinear a la derecha */
+    }
+
+    /* Estilo para botones */
+    .white-btn {
+      background-color: white;
+      color: #040e1f;
+    }
+
+    /* Estilo para botones al pasar el mouse */
+    .white-btn:hover {
+      background-color: #040e1f;
+      color: white;
+    }
+
+    /* Estilo para botones al dar clic */
+    .white-btn:active {
+      background-color: #aed9e8 !important; /* Azul pastel claro */
+      color: #040e1f !important;
+    }
+
+    /* Estilo para el scroll de la tabla */
+/* Estilo para el contenedor del scroll */
+.scroll-table-container {
+  max-height: 200px;
+  overflow-y: auto;
+  
+  border-radius: 10px; /* Bordes redondos */
+
+}
+
+/* Estilo para el scroll de la tabla */
+.scroll-table {
+  max-height: 100%; /* Ajustar al 100% de la altura del contenedor */
+
+}
+p {
+  text-align: justify;
+}
+
+/* Estilos generales para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos alternados para filas */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Estilos para las celdas de datos */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Línea divisoria entre filas */
+}
+
+/* Hover sobre filas para resaltar */
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+
+
+/*footer*/
+.foote {
+  background-color: #475d73; /* Color azul fuerte */
+  color: #ffffff; /* Texto en color blanco */
+  padding: 20px;
+  text-align: center;
+
+  bottom: 0;
+  width: 100%;
+
+}
